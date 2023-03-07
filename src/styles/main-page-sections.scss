@@ -1,0 +1,120 @@
+@import './variables.scss';
+@import './box-shadows.scss';
+@import './images.scss';
+
+//? Apply to Whole Intro Section
+
+// main page background container
+
+.main_container {
+  width: auto;
+  height: 100%;
+  @include flex-center-center;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    #7b66ff 17.36%,
+    #fec135 31.42%,
+    #fec135 47.05%,
+    #5effe5 52.78%,
+    rgba(126, 245, 226, 0.736402) 74.81%,
+    #5e9eff 84.3%
+  );
+
+  // homepage heading text
+  .intro_heading {
+    text-align: center;
+    @include heading-font;
+  }
+  // homepage sub-heading text
+  .intro_subHeading {
+    @include text-font-large;
+  }
+
+  .intro_news_button_container {
+    @include flex-center-center;
+    width: 100%;
+  }
+
+  .intro_button_container {
+    @include flex-center-center;
+    margin: 2rem;
+  }
+
+  // standard article container for each part of home page (Hero, Menu, News, Shop)
+  .intro_article_container {
+    padding: 1rem 1.5rem 4rem 1.5rem;
+    width: auto;
+    max-width: 32rem;
+    margin-top: 2rem;
+
+    // container for intro image
+    .intro_img_container {
+      @include flex-center-center;
+      width: 100%;
+      height: auto;
+      // img element itself
+      .intro_img_portrait {
+        @include image-portrait;
+      }
+      .intro_img_landscape {
+        @include image_small-landscape;
+      }
+    }
+    //? Hero Section
+
+    //container for main hero/intro text
+    .intro_text_container {
+      padding-bottom: 2rem;
+      // p element
+      .intro_hero_text_large {
+        @include text-font-large;
+        padding: 1rem 0rem;
+      }
+    }
+
+    // container for small hero/intro text
+    .small_text_container {
+      // p element
+      .intro_hero_text_small {
+        @include text-font-small;
+        padding: 0.4rem 0rem;
+      }
+    }
+
+    //? Menu Section
+
+    // container for intro menu title
+
+    .intro_menu_text_container {
+      padding: 2rem 0rem 0rem 0rem;
+      .intro_menu_text {
+        @include text-font-medium;
+        padding: 0.4rem 1rem;
+      }
+    }
+
+    //? News Section
+
+    .intro_news_subHeading_container {
+      padding: 0rem 0rem 2rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .intro_news_text_container {
+      .intro_text {
+        @include text-font-small;
+        padding: 0.4rem 1rem;
+      }
+    }
+
+    //? Shop Section
+    .shop_category_container {
+      @include flex-center-center;
+      flex-direction: column;
+      margin: 1rem 1rem 5rem 1rem;
+      .shop_category_link {
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Roboto:wght@500&display=swap");
+.footer_container {
+  background-color: black;
+  color: white;
+}
+.footer_container .footer_button_container {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0rem 1.5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_container .about_container {
+  width: 100vw;
+  height: auto;
+}
+.footer_container .footer_social_media_container {
+  width: 100%;
+  height: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_container .footer_social_media_container .footer_icon_link {
+  margin: 0.5rem 1rem;
+}
+.footer_container .footer_social_media_container .footer_icon_link .footer_social_media_icon {
+  height: 2rem;
+  width: 2rem;
+  color: white;
+}
+.footer_container .footer_social_media_container .footer_icon_link .footer_social_media_icon:hover {
+  color: #5effe5;
+}/*# sourceMappingURL=footer.css.map */

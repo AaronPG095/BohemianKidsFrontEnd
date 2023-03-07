@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Roboto:wght@500&display=swap");
+.navbar_button {
+  background-color: #5e9eff;
+  width: 4rem;
+  height: 2rem;
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 2.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black;
+  color: black;
+}
+.navbar_button:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0;
+}
+.navbar_button:hover {
+  background-color: #5effe5;
+}
+
+.navbar_button_activated {
+  width: 4rem;
+  height: 2rem;
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 2.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black;
+  background-color: #fc7900;
+}
+.navbar_button_activated:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0;
+}
+.navbar_button_activated:hover {
+  background-color: #5effe5;
+}
+
+.navbar_shopping_cart_button {
+  font-size: 1.2rem;
+  width: 2.5rem;
+  height: 2rem;
+  border: 2.2px solid black;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e9eff;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black;
+}
+.navbar_shopping_cart_button:hover {
+  background-color: #5effe5;
+  color: blue;
+}
+.navbar_shopping_cart_button:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0;
+}
+
+.button_medium_colorOne {
+  width: 4rem;
+  height: 2rem;
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 2.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black;
+  background-color: #5e9eff;
+  color: black;
+}
+.button_medium_colorOne:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0;
+}
+.button_medium_colorOne:hover {
+  background-color: #5effe5;
+}
+
+.button_medium_colorTwo {
+  width: 4rem;
+  height: 2rem;
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 2.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black;
+  background-color: #7b67f4;
+}
+.button_medium_colorTwo:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0;
+}
+.button_medium_colorTwo:hover {
+  background-color: #5effe5;
+}
+
+.button_medium_colorThree {
+  width: 4rem;
+  height: 2rem;
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 2.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black;
+  background-color: #fec135;
+}
+.button_medium_colorThree:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0;
+}
+.button_medium_colorThree:hover {
+  background-color: #5effe5;
+}
+
+.button_medium_colorFour {
+  width: 4rem;
+  height: 2rem;
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 2.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black;
+  background-color: #5effe5;
+}
+.button_medium_colorFour:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0;
+}
+.button_medium_colorFour:hover {
+  background-color: #ff8b8b;
+}
+
+.button_large_colorOne {
+  width: 8rem;
+  height: 4rem;
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 3px;
+  color: black;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black, -5.25px 5.25px 0px black, -5.5px 5.5px 0px black, -5.75px 5.75px 0px black, -6px 6px 0px black, -6.25px 6.25px 0px black, -6.5px 6.5px 0px black, -6.75px 6.75px 0px black, -7px 7px 0px black, -7.25px 7.25px 0px black, -7.5px 7.5px 0px black, -7.75px 7.75px 0px black, -8px 8px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e9eff;
+}
+.button_large_colorOne:active {
+  box-shadow: 0 0 0;
+  transform: translateY(12px);
+}
+.button_large_colorOne:hover {
+  background-color: #ff8b8b;
+}
+
+.button_large_rightSideBoxShadow_colorOne {
+  width: 8rem;
+  height: 4rem;
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 3px;
+  color: black;
+  box-shadow: 0.25px 0.25px 0px black, 0.5px 0.5px 0px black, 0.75px 0.75px 0px black, 1px 1px 0px black, 1.25px 1.25px 0px black, 1.5px 1.5px 0px black, 1.75px 1.75px 0px black, 2px 2px 0px black, 2.25px 2.25px 0px black, 2.5px 2.5px 0px black, 2.75px 2.75px 0px black, 3px 3px 0px black, 3.25px 3.25px 0px black, 3.5px 3.5px 0px black, 3.75px 3.75px 0px black, 4px 4px 0px black, 4.25px 4.25px 0px black, 4.5px 4.5px 0px black, 4.75px 4.75px 0px black, 5px 5px 0px black, 5.25px 5.25px 0px black, 5.5px 5.5px 0px black, 5.75px 5.75px 0px black, 6px 6px 0px black, 6.25px 6.25px 0px black, 6.5px 6.5px 0px black, 6.75px 6.75px 0px black, 7px 7px 0px black, 7.25px 7.25px 0px black, 7.5px 7.5px 0px black, 7.75px 7.75px 0px black, 8px 8px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e9eff;
+}
+.button_large_rightSideBoxShadow_colorOne:active {
+  box-shadow: 0 0 0;
+  transform: translateY(12px);
+}
+.button_large_rightSideBoxShadow_colorOne:hover {
+  background-color: #ff8b8b;
+}
+
+.button_large_colorTwo {
+  width: 8rem;
+  height: 4rem;
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 3px;
+  color: black;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black, -5.25px 5.25px 0px black, -5.5px 5.5px 0px black, -5.75px 5.75px 0px black, -6px 6px 0px black, -6.25px 6.25px 0px black, -6.5px 6.5px 0px black, -6.75px 6.75px 0px black, -7px 7px 0px black, -7.25px 7.25px 0px black, -7.5px 7.5px 0px black, -7.75px 7.75px 0px black, -8px 8px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7b67f4;
+}
+.button_large_colorTwo:active {
+  box-shadow: 0 0 0;
+  transform: translateY(12px);
+}
+.button_large_colorTwo:hover {
+  background-color: #ff8b8b;
+}
+
+.button_large_colorThree {
+  width: 8rem;
+  height: 4rem;
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 3px;
+  color: black;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black, -5.25px 5.25px 0px black, -5.5px 5.5px 0px black, -5.75px 5.75px 0px black, -6px 6px 0px black, -6.25px 6.25px 0px black, -6.5px 6.5px 0px black, -6.75px 6.75px 0px black, -7px 7px 0px black, -7.25px 7.25px 0px black, -7.5px 7.5px 0px black, -7.75px 7.75px 0px black, -8px 8px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fec135;
+}
+.button_large_colorThree:active {
+  box-shadow: 0 0 0;
+  transform: translateY(12px);
+}
+.button_large_colorThree:hover {
+  background-color: #ff8b8b;
+}
+
+.button_large_rightSideBoxShadow_colorThree {
+  width: 8rem;
+  height: 4rem;
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 3px;
+  color: black;
+  box-shadow: 0.25px 0.25px 0px black, 0.5px 0.5px 0px black, 0.75px 0.75px 0px black, 1px 1px 0px black, 1.25px 1.25px 0px black, 1.5px 1.5px 0px black, 1.75px 1.75px 0px black, 2px 2px 0px black, 2.25px 2.25px 0px black, 2.5px 2.5px 0px black, 2.75px 2.75px 0px black, 3px 3px 0px black, 3.25px 3.25px 0px black, 3.5px 3.5px 0px black, 3.75px 3.75px 0px black, 4px 4px 0px black, 4.25px 4.25px 0px black, 4.5px 4.5px 0px black, 4.75px 4.75px 0px black, 5px 5px 0px black, 5.25px 5.25px 0px black, 5.5px 5.5px 0px black, 5.75px 5.75px 0px black, 6px 6px 0px black, 6.25px 6.25px 0px black, 6.5px 6.5px 0px black, 6.75px 6.75px 0px black, 7px 7px 0px black, 7.25px 7.25px 0px black, 7.5px 7.5px 0px black, 7.75px 7.75px 0px black, 8px 8px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fec135;
+}
+.button_large_rightSideBoxShadow_colorThree:active {
+  box-shadow: 0 0 0;
+  transform: translateY(12px);
+}
+.button_large_rightSideBoxShadow_colorThree:hover {
+  background-color: #ff8b8b;
+}
+
+.button_large_colorFour {
+  width: 8rem;
+  height: 4rem;
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 3px;
+  color: black;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black, -5.25px 5.25px 0px black, -5.5px 5.5px 0px black, -5.75px 5.75px 0px black, -6px 6px 0px black, -6.25px 6.25px 0px black, -6.5px 6.5px 0px black, -6.75px 6.75px 0px black, -7px 7px 0px black, -7.25px 7.25px 0px black, -7.5px 7.5px 0px black, -7.75px 7.75px 0px black, -8px 8px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5effe5;
+}
+.button_large_colorFour:active {
+  box-shadow: 0 0 0;
+  transform: translateY(12px);
+}
+.button_large_colorFour:hover {
+  background-color: #ff8b8b;
+}
+
+.button_large_rightSideBoxShadow_colorFour {
+  width: 8rem;
+  height: 4rem;
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 3px;
+  color: black;
+  box-shadow: 0.25px 0.25px 0px black, 0.5px 0.5px 0px black, 0.75px 0.75px 0px black, 1px 1px 0px black, 1.25px 1.25px 0px black, 1.5px 1.5px 0px black, 1.75px 1.75px 0px black, 2px 2px 0px black, 2.25px 2.25px 0px black, 2.5px 2.5px 0px black, 2.75px 2.75px 0px black, 3px 3px 0px black, 3.25px 3.25px 0px black, 3.5px 3.5px 0px black, 3.75px 3.75px 0px black, 4px 4px 0px black, 4.25px 4.25px 0px black, 4.5px 4.5px 0px black, 4.75px 4.75px 0px black, 5px 5px 0px black, 5.25px 5.25px 0px black, 5.5px 5.5px 0px black, 5.75px 5.75px 0px black, 6px 6px 0px black, 6.25px 6.25px 0px black, 6.5px 6.5px 0px black, 6.75px 6.75px 0px black, 7px 7px 0px black, 7.25px 7.25px 0px black, 7.5px 7.5px 0px black, 7.75px 7.75px 0px black, 8px 8px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5effe5;
+}
+.button_large_rightSideBoxShadow_colorFour:active {
+  box-shadow: 0 0 0;
+  transform: translateY(12px);
+}
+.button_large_rightSideBoxShadow_colorFour:hover {
+  background-color: #ff8b8b;
+}
+
+.button_phone_footer {
+  background-color: #000000;
+  width: 12rem;
+  height: 4rem;
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  color: white;
+  border: solid white 3px;
+  box-shadow: -0.05px 0.05px 0px black, -0.1px 0.1px 0px black, -0.15px 0.15px 0px black, -0.2px 0.2px 0px black, -0.25px 0.25px 0px white, -0.5px 0.5px 0px white, -0.75px 0.75px 0px white, -1px 1px 0px black, -1.25px 1.25px 0px white, -1.5px 1.5px 0px white, -1.75px 1.75px 0px white, -2px 2px 0px white, -2.25px 2.25px 0px white, -2.5px 2.5px 0px white, -2.75px 2.75px 0px white, -3px 3px 0px white, -3.25px 3.25px 0px white, -3.5px 3.5px 0px white, -3.75px 3.75px 0px white, -4px 4px 0px white, -4.25px 4.25px 0px white, -4.5px 4.5px 0px white, -4.75px 4.75px 0px white, -5px 5px 0px white, -5.25px 5.25px 0px white, -5.5px 5.5px 0px white, -5.75px 5.75px 0px white, -6px 6px 0px white, -6.25px 6.25px 0px white, -6.5px 6.5px 0px white, -6.75px 6.75px 0px white, -7px 7px 0px white, -7.25px 7.25px 0px white, -7.5px 7.5px 0px white, -7.75px 7.75px 0px white, -8px 8px 0px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+.button_phone_footer:hover {
+  background-color: gray;
+}
+.button_phone_footer:active {
+  box-shadow: 0 0 0;
+  transform: translateY(12px);
+}
+
+.button_large_footer {
+  background-color: #000000;
+  width: 8rem;
+  height: 4rem;
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  border: solid white 3px;
+  box-shadow: -3px 3px 0px 3px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button_login_register {
+  width: 6rem;
+  height: 3rem;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  border: solid black 2.2px;
+  color: black;
+  cursor: pointer;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black, -5.25px 5.25px 0px black, -5.5px 5.5px 0px black, -5.75px 5.75px 0px black, -6px 6px 0px black, -6.25px 6.25px 0px black, -6.5px 6.5px 0px black, -6.75px 6.75px 0px black, -7px 7px 0px black, -7.25px 7.25px 0px black, -7.5px 7.5px 0px black, -7.75px 7.75px 0px black, -8px 8px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.button_login_register:hover {
+  background-color: lightgray;
+}
+.button_login_register:active {
+  box-shadow: 0 0 0;
+  transform: translateY(12px);
+}
+
+.login_with_facebook_button {
+  color: black;
+  display: block;
+  font-size: 0.8rem;
+  text-decoration: none;
+  width: 100%;
+  height: 2rem;
+  margin: 8rem 1rem 1rem 1rem;
+  padding: 0.1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.login_with_facebook_button:hover {
+  background-color: lightgray;
+}
+.login_with_facebook_button .login_with_facebook_button_icon {
+  font-size: 1.3rem;
+  margin: 0rem 1rem 0rem 0.5rem;
+}
+
+.login_with_google_button {
+  color: black;
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-decoration: none;
+  width: 100%;
+  height: 2rem;
+  margin: 0rem 1rem 0rem 1rem;
+  padding: 0.1rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.login_with_google_button:hover {
+  background-color: lightgray;
+}
+.login_with_google_button .login_with_google_button_icon {
+  font-size: 1.3rem;
+  margin: 0rem 1rem 0rem 0.5rem;
+}
+
+.imprint_medium_nav_button {
+  font-size: 0.5rem;
+  width: 4rem;
+  height: 2rem;
+  border: white solid 2px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0.25px 0.25px 0px white, 0.5px 0.5px 0px white, 0.75px 0.75px 0px white, 1px 1px 0px white, 1.25px 1.25px 0px white, 1.5px 1.5px 0px white, 1.75px 1.75px 0px white, 2px 2px 0px white, 2.25px 2.25px 0px white, 2.5px 2.5px 0px white, 2.75px 2.75px 0px white, 3px 3px 0px white, 3.25px 3.25px 0px white, 3.5px 3.5px 0px white, 3.75px 3.75px 0px white, 4px 4px 0px white, 4.25px 4.25px 0px white, 4.5px 4.5px 0px white, 4.75px 4.75px 0px white, 5px 5px 0px white;
+}
+.imprint_medium_nav_button:hover {
+  background-color: gray;
+}
+.imprint_medium_nav_button:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0;
+}
+
+.addToCart_button_small {
+  cursor: pointer;
+  width: 12rem;
+  height: 3rem;
+  color: black;
+  border: solid black 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black, -5.25px 5.25px 0px black, -5.5px 5.5px 0px black, -5.75px 5.75px 0px black, -6px 6px 0px black, -6.25px 6.25px 0px black, -6.5px 6.5px 0px black, -6.75px 6.75px 0px black, -7px 7px 0px black, -7.25px 7.25px 0px black, -7.5px 7.5px 0px black, -7.75px 7.75px 0px black, -8px 8px 0px black;
+  background-color: #5e9eff;
+  color: black;
+}
+.addToCart_button_small:hover {
+  background-color: #5effe5;
+}
+.addToCart_button_small:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0;
+}
+.addToCart_button_small .shop_addToCart_small_button_icon {
+  font-size: 1.5rem;
+  margin: 0rem 1.5rem 0.3rem 0rem;
+}
+
+.addToCart_button_large {
+  width: 24rem;
+  height: 6rem;
+  color: black;
+  border: solid black 4px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black, -5.25px 5.25px 0px black, -5.5px 5.5px 0px black, -5.75px 5.75px 0px black, -6px 6px 0px black, -6.25px 6.25px 0px black, -6.5px 6.5px 0px black, -6.75px 6.75px 0px black, -7px 7px 0px black, -7.25px 7.25px 0px black, -7.5px 7.5px 0px black, -7.75px 7.75px 0px black, -8px 8px 0px black;
+}
+.addToCart_button_large .shop_addToCart_large_button_icon {
+  font-size: 1.5rem;
+  margin: 0rem 1rem 0.3rem 0rem;
+}
+
+.plus_minus_product_number_button_small {
+  width: 8rem;
+  height: 2rem;
+  color: black;
+  border: solid black 2px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black;
+  background-color: #5effe5;
+  color: black;
+}
+.plus_minus_product_number_button_small .plus_minus_button_icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.plus_minus_product_number_button_small .plus_minus_button_icon:hover {
+  color: #5e9eff;
+}
+.plus_minus_product_number_button_small .plus_minus_button_productNumber {
+  font-size: 1.2rem;
+  margin: 0rem 1.5rem;
+}
+
+.plus_minus_product_number_button_large {
+  width: 12rem;
+  height: 3rem;
+  color: black;
+  border: solid black 3px;
+  text-decoration: none;
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black, -5.25px 5.25px 0px black, -5.5px 5.5px 0px black, -5.75px 5.75px 0px black, -6px 6px 0px black, -6.25px 6.25px 0px black, -6.5px 6.5px 0px black, -6.75px 6.75px 0px black, -7px 7px 0px black, -7.25px 7.25px 0px black, -7.5px 7.5px 0px black, -7.75px 7.75px 0px black, -8px 8px 0px black;
+  background-color: #5e9eff;
+  color: black;
+}
+.plus_minus_product_number_button_large .plus_minus_button_icon {
+  cursor: pointer;
+}
+.plus_minus_product_number_button_large .plus_minus_button_icon:hover {
+  color: #5effe5;
+}
+.plus_minus_product_number_button_large .plus_minus_button_productNumber {
+  font-size: 2.2rem;
+  margin: 0rem 2rem;
+}
+
+.delete_item_button {
+  color: black;
+  width: 8rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+  padding: 0rem;
+  background: transparent;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+}
+.delete_item_button .delete_item_button_icon {
+  margin: 0rem 0.2rem 0rem 0rem;
+  font-size: 1.5rem;
+}
+.delete_item_button .delete_item_button_icon:hover {
+  color: #ff8b8b;
+}
+.delete_item_button:hover {
+  color: #ff8b8b;
+}/*# sourceMappingURL=buttons.css.map */

@@ -1,0 +1,102 @@
+@import './variables.scss';
+@import './box-shadows.scss';
+
+.shop_background_container {
+  height: 100%;
+  width: 100%;
+  @include flex-center-center;
+  flex-direction: column;
+  background: linear-gradient(180deg, #5effe5 0%, #5e9eff 36.81%);
+
+  .shop_content_container {
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 32rem;
+    @include flex-center-center;
+    flex-direction: column;
+
+    .shop_heading {
+      margin: 3rem 0rem 0rem 0rem;
+      text-align: center;
+      @include heading-font;
+    }
+
+    .shop_button_container {
+      width: auto;
+      margin: 0rem 1rem 1rem 1rem;
+      @include flex-center-center;
+      flex-wrap: wrap;
+      .button_large_colorOne {
+        margin: 0.4rem 0.6rem;
+      }
+    }
+
+    .shop_subHeading {
+      @include subHeading_font;
+      margin: 2rem 0rem 0rem 0rem;
+      text-align: center;
+    }
+
+    .shop_text_container {
+      width: 90%;
+      margin: 1rem;
+      @include flex-center-center;
+      flex-direction: column;
+
+      .shop_medium_text {
+        @include text-font-medium;
+      }
+    }
+    .shop_productType_container {
+      @include flex-center-center;
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+      margin: 1rem 0rem;
+      .shop_productType_heading {
+        @include text-font-large;
+        margin: 1.5rem 0rem 0rem 0rem;
+        text-align: center;
+      }
+      .shop_product {
+        margin: 0rem 0rem 3rem 0rem;
+        width: 95%;
+
+        .shop_img_container {
+          @include flex-center-center;
+          width: auto;
+          height: auto;
+          margin: 0rem 0rem 1rem 0rem;
+
+          .shop_img {
+            @include image_small-landscape;
+            margin: 1rem 0rem 1rem 1rem;
+          }
+        }
+        .shop_product_list {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          letter-spacing: 0.15em;
+          margin: 2rem 1rem 0rem 1rem;
+        }
+        .shop_product_addToCartPopUp_button_container {
+          margin: 1rem 1rem;
+        }
+      }
+    }
+    .shop_small_text_container {
+      margin: 2rem 0rem 2rem 0rem;
+      .shop_small_text {
+        @include text-font-small;
+      }
+    }
+
+    .shop_home_button_container {
+      width: 100%;
+      margin: 4rem 2rem 2rem 2rem;
+      @include flex-center-start;
+    }
+  }
+}

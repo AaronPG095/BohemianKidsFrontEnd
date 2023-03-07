@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+
+@import './images.scss';
+@import './buttons.scss';
+@import './add-blog-post.scss';
+@import './blog-post-component.scss';
+@import './inputs.scss';
+@import './images.scss';
+@import './login-and-registration.scss';
+@import './nav-bar.scss';
+@import './footer.scss';
+@import './reset.scss';
+@import './main-page-sections.scss';
+@import './news.scss';
+@import './menu.scss';
+@import './shop.scss';
+@import './box-shadows.scss';
+@import './animations.scss';
+@import './shopping-cart.scss';
+@import './shopping-cart-item.scss';
+@import './add-to-cart-modal.scss';
+@import './imprint.scss';
+@import './variables.scss';
+@import './user-info.scss';
+@import './payment-dialog.scss';
+@import './requireAuth.scss';
+@import './admin-page.scss';
+@import './user-orders.scss';
+@import './order-component.scss';
+@import './minor-dialogs.scss';
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  font-family: $main-font;
+}
+
+button {
+  font-family: $main-font;
+}

@@ -1,0 +1,104 @@
+@import './variables.scss';
+@import './box-shadows.scss';
+
+.navbar {
+  background-color: $colorFive;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  // .fixed {
+  //   position: fixed;
+  // }
+  @include sm {
+    padding: 0 0rem;
+  }
+  @include md {
+    padding: 0 6rem;
+  }
+  @include lg {
+    padding: 0 9rem;
+  }
+  @include xl {
+    padding: 0 12rem;
+  }
+
+
+  .navbar_content {
+    .navbar_content_container {
+      padding: 0.5rem 1rem 0rem 1rem;
+      width: 100%;
+      @include flex-center-between;
+      flex-direction: row;
+
+      .user_dropdown {
+        position: relative;
+
+        .user_dropdown_arrow_icon {
+          font-size: 1rem;
+          margin-bottom: 0.2rem;
+        }
+
+        .user_dropdown_content {
+          position: absolute;
+          list-style-type: none;
+          @include flex-center-center;
+          flex-direction: column;
+          
+
+          .user_dropdown_list_loggedIn {
+            cursor: pointer;
+            margin: 0.7rem 0rem 0rem 0rem;
+            width: 4rem;
+            height: 2rem;
+            text-align: center;
+            border: 1px solid black;
+            background-color: $colorFive;
+            @include text-font-small;
+            border: 2.2px black solid;
+            @include flex-center-center;
+            flex-direction: row;
+            @include medium-leftSide-button-boxShadow;
+            &:hover {
+              background-color: $colorFour;
+              color: blue;
+            }
+            &:active {
+              @include medium-button-click-animation;
+            }
+          }
+          .user_dropdown_list_loggedOut {
+            cursor: pointer;
+            margin: 0.7rem 0rem 0rem 0rem;
+            width: 4rem;
+            height: 2rem;
+            text-align: center;
+            border: 1px solid black;
+            background-color: $colorOne;
+            @include text-font-small;
+            border: 2.2px black solid;
+            @include flex-center-center;
+            flex-direction: row;
+            @include medium-leftSide-button-boxShadow;
+            &:hover {
+              background-color: $colorFour;
+              color: blue;
+            }
+            &:active {
+              @include medium-button-click-animation;
+            }
+          }
+          .user_dropdown_navlink {
+            display: block;
+            color: black;
+            // padding: 0.7rem 0.5rem;
+            text-decoration: none;
+            @include text-font-small;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import './variables.scss';
+@import './box-shadows.scss';
+
+//? Mixins for different image sizes and orientations
+
+@mixin image-portrait {
+  margin: 2rem 0rem 2rem 1rem;
+  width: 15rem;
+  height: 20rem;
+  border: 7px solid black;
+  @include image-portrait-boxShadow-smallScreen;
+}
+
+@mixin image-small-landscape {
+  margin: 0rem 0rem 2rem 0rem;
+  width: 16rem;
+  height: 9rem;
+  border: 5px solid black;
+  @include image-landscape-boxShadow;
+}
+
+@mixin image-large-landscape {
+}

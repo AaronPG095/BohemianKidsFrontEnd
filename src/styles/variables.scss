@@ -1,0 +1,116 @@
+//? Google Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Roboto:wght@500&display=swap');
+@import './box-shadows.scss';
+
+//? Fonts
+
+$main-font: 'League Spartan', sans-serif;
+@mixin text-font-xs {
+  font-size: 0.5rem;
+}
+@mixin text-font-small {
+  font-size: 0.75rem;
+}
+@mixin text-font-medium {
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+}
+@mixin text-font-medium-large {
+  font-size: 1.5rem;
+}
+@mixin text-font-large {
+  font-size: 2rem;
+}
+@mixin subHeading_font {
+  font-size: 4rem;
+}
+@mixin heading-font {
+  font-size: 8rem;
+}
+@mixin button-font-xl {
+  font-size: 4rem;
+}
+
+//? Display Flex Combinations
+
+@mixin flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-start-center {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@mixin flex-center-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin flex-center-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//? Colors
+
+$colorOne: #5e9eff;
+$colorTwo: #7b67f4;
+$colorThree: #fec135;
+$colorFour: #5effe5;
+$colorFive: #ff8b8b;
+$buttonActivated: #fc7900;
+
+//? Breakpoints
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}

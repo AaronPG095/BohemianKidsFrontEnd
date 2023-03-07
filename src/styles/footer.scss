@@ -1,0 +1,36 @@
+@import './variables.scss';
+@import './box-shadows.scss';
+
+.footer_container {
+  background-color: black;
+  color: white;
+
+  .footer_button_container {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0rem 1.5rem 0rem;
+    @include flex-center-center;
+  }
+  .about_container {
+    width: 100vw;
+    height: auto;
+  }
+
+  .footer_social_media_container {
+    width: 100%;
+    height: auto;
+    color: white;
+    @include flex-center-center;
+    .footer_icon_link {
+      margin: 0.5rem 1rem;
+      .footer_social_media_icon {
+        height: 2rem;
+        width: 2rem;
+        color: white;
+        &:hover {
+          color: $colorFour;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import './variables.scss';
+@import './box-shadows.scss';
+
+@mixin small-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  cursor: pointer;
+  height: 1.3rem;
+  width: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: black;
+  border: black solid 1px;
+  background-color: $colorFour;
+  @include small-leftSide-checkBox-boxShadow;
+  display: grid;
+  place-content: center;
+  &:hover {
+    background-color: $colorFive;
+  }
+  &::before {
+    content: '';
+    width: 0.8rem;
+    height: 0.8rem;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1rem 1rem black;
+    // transform-origin: bottom left;
+  }
+  &:checked::before {
+    transform: scale(1);
+  }
+
+  &:checked {
+    background-color: $colorFive;
+  }
+}
+
+@mixin medium-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 0.5rem;
+  color: black;
+  border: black solid 2px;
+  background-color: $colorFour;
+  @include medium-leftSide-checkBox-boxShadow;
+  display: grid;
+  place-content: center;
+  &:hover {
+    background-color: $colorFive;
+  }
+  &::before {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1.5rem 1.5rem black;
+    // transform-origin: bottom left;
+  }
+  &:checked::before {
+    transform: scale(1);
+  }
+  &:checked {
+    background-color: $colorFive;
+  }
+}

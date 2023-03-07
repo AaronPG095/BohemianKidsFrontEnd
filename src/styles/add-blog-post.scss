@@ -1,0 +1,84 @@
+@import './variables.scss';
+@import './buttons.scss';
+
+.add_blog_post_page {
+  background-color: white;
+  @include flex-center-center;
+
+  .add_blog_post_outer_container {
+    width: 100%;
+    min-width: 20rem;
+    height: auto;
+    max-width: 30rem;
+    margin: 4rem 1rem 4rem 4rem;
+    @include flex-center-center;
+    flex-direction: column;
+    @include login-reg-boxShadow;
+    border: 0.6rem black solid;
+
+    .add_blog_post_inner_container {
+      width: 100%;
+      height: auto;
+      min-height: 40rem;
+      padding: 0rem 0.5rem;
+      border: white solid 0.2rem;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 60%,
+        rgba(0, 0, 0, 1) 100%
+      );
+      .add_blog_post_heading {
+        @include subHeading_font;
+        text-align: center;
+        margin: 2rem 0rem 4rem 0rem;
+      }
+      .add_blog_post_form {
+        margin: 0rem 0rem 2rem 0rem;
+        .add_blog_post_form_item {
+          width: 100%;
+
+          .add_blog_post_form_inputField {
+            display: flex;
+            width: 100%;
+            height: 1.8rem;
+            margin: 0.5rem 0rem;
+            border: black solid 0.2rem;
+          }
+          .add_blog_post_form_largeInputField {
+            vertical-align: text-top;
+            width: 100%;
+            margin: 0.5rem 0rem;
+            border: black solid 0.2rem;
+          }
+        }
+        .add_blog_post_form_uploadImage_container {
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+
+          .add_blog_post_form_uploadImage_item {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            margin: 1rem 0rem;
+            padding: 0rem 0rem 0rem 0rem;
+
+            .add_blog_post_form_inputField {
+              margin: 0.3rem 0rem;
+            }
+          }
+        }
+
+        .add_blog_post_button_container {
+          margin: 2rem 0rem 2rem 0rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          .button_add_blog_post {
+          }
+        }
+      }
+    }
+  }
+}

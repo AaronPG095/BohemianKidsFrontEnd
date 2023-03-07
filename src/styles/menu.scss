@@ -1,0 +1,66 @@
+@import './variables.scss';
+
+.menu_background_container {
+  height: 100%;
+  width: 100%;
+  @include flex-center-center;
+  flex-direction: column;
+  background: linear-gradient(180deg, #7b66ff 0%, #fec135 36.81%);
+
+  .menu_content_container {
+    margin-top: 2rem;
+    padding: 2rem;
+    width: auto;
+    max-width: 32rem;
+
+    .menu_heading {
+      text-align: center;
+      @include heading-font;
+    }
+    .menu_subHeading {
+      @include subHeading_font;
+      text-align: center;
+    }
+
+    .menu_text_container {
+      margin: 2rem 0rem 4rem 0rem;
+
+      .menu_medium_text {
+        @include text-font-medium;
+        margin: 1rem 0rem;
+      }
+    }
+    .menu_list_container {
+      margin: 2rem 0rem 2rem 0rem;
+      .menu_list_text {
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 0.15rem;
+        @include text-font-medium;
+      }
+    }
+
+    .menu_item_container {
+      margin: 1rem 0rem;
+    }
+
+    .menu_img_container {
+      @include flex-center-center;
+      width: 100%;
+      height: auto;
+      margin: 2rem 0rem 2rem 0rem;
+      .menu_img {
+        @include image_small-landscape;
+      }
+    }
+
+    .menu_home_button_container {
+      margin: 4rem 0rem 2rem 0rem;
+    }
+  }
+}
+
+time {
+  @include text-font-small;
+  @include flex-center-center;
+}

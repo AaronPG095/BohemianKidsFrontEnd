@@ -1,0 +1,68 @@
+@import './variables.scss';
+@import './buttons.scss';
+
+// Verify Email, Email Verified & Forgot Password
+
+.minor_dialog_background_container {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.minor_dialog_container {
+  @include flex-center-center;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 6rem 1rem 0rem 1rem;
+  height: 30%;
+
+  .minor_dialog_heading {
+    @include subHeading_font;
+    text-align: center;
+  }
+
+  .minor_dialog_subHeading {
+    @include text-font-medium-large;
+    text-align: center;
+  }
+
+  .minor_dialog_text {
+    @include text-font-small;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .minor_dialog_form {
+    @include flex-center-center;
+    flex-direction: column;
+    .minor_dialog_form_item {
+      margin: 1rem 0rem;
+      @include flex-center-center;
+      flex-direction: row;
+    }
+    input {
+      margin: 0.5rem;
+      background: transparent;
+      height: 1.8rem;
+      margin: 0.3rem;
+      border: black solid 0.15rem;
+    }
+  }
+  .minor_dialog_icon {
+    font-size: 3rem;
+  }
+
+  .minor_dialog_msg {
+    margin: 1.5rem 0rem 1rem 0rem;
+    text-align: center;
+  }
+  .minor_dialog_button_container {
+    @include flex-center-center;
+    margin: 1rem 0rem;
+    flex-direction: row;
+    .login_reg_button_wrapper {
+      margin: 0rem 1rem;
+    }
+  }
+}

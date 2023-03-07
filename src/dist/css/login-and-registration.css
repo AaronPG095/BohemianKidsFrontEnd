@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Roboto:wght@500&display=swap");
+.login_reg_page {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_reg_page .login_reg_outer_container {
+  width: 100%;
+  min-width: 20rem;
+  height: auto;
+  max-width: 30rem;
+  margin: 4rem 1rem 4rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: -0.25px 0.25px 0px black, -0.5px 0.5px 0px black, -0.75px 0.75px 0px black, -1px 1px 0px black, -1.25px 1.25px 0px black, -1.5px 1.5px 0px black, -1.75px 1.75px 0px black, -2px 2px 0px black, -2.25px 2.25px 0px black, -2.5px 2.5px 0px black, -2.75px 2.75px 0px black, -3px 3px 0px black, -3.25px 3.25px 0px black, -3.5px 3.5px 0px black, -3.75px 3.75px 0px black, -4px 4px 0px black, -4.25px 4.25px 0px black, -4.5px 4.5px 0px black, -4.75px 4.75px 0px black, -5px 5px 0px black, -5.25px 5.25px 0px black, -5.5px 5.5px 0px black, -5.75px 5.75px 0px black, -6px 6px 0px black, -6.25px 6.25px 0px black, -6.5px 6.5px 0px black, -6.75px 6.75px 0px black, -7px 7px 0px black, -7.25px 7.25px 0px black, -7.5px 7.5px 0px black, -7.75px 7.75px 0px black, -8px 8px 0px black, -8.25px 8.25px 0px black, -8.5px 8.5px 0px black, -8.75px 8.75px 0px black, -9px 9px 0px black, -9.25px 9.25px 0px black, -9.5px 9.5px 0px black, -9.75px 9.75px 0px black, -10px 10px 0px black, -10.25px 10.25px 0px black, -10.5px 10.5px 0px black, -10.75px 10.75px 0px black, -11px 11px 0px black, -11.25px 11.25px 0px black, -11.5px 11.5px 0px black, -11.75px 11.75px 0px black, -12px 12px 0px black, -12.25px 12.25px 0px black, -12.5px 12.5px 0px black, -12.75px 12.75px 0px black, -13px 13px 0px black, -13.25px 13.25px 0px black, -13.5px 13.5px 0px black, -13.75px 13.75px 0px black, -14px 14px 0px black, -14.25px 14.25px 0px black, -14.5px 14.5px 0px black, -14.75px 14.75px 0px black, -15px 15px 0px black, -15.25px 15.25px 0px black, -15.5px 15.5px 0px black, -15.75px 15.75px 0px black, -16px 16px 0px black, -16.25px 16.25px 0px black, -16.5px 16.5px 0px black, -16.75px 16.75px 0px black, -17px 17px 0px black, -17.25px 17.25px 0px black, -17.5px 17.5px 0px black, -17.75px 17.75px 0px black, -18px 18px 0px black, -18.25px 18.25px 0px black, -18.5px 18.5px 0px black, -18.75px 18.75px 0px black, -19px 19px 0px black, -19.25px 19.25px 0px black, -19.5px 19.5px 0px black, -19.75px 19.75px 0px black, -20px 20px 0px black, -20.25px 20.25px 0px black, -20.5px 20.5px 0px black, -20.75px 20.75px 0px black, -21px 21px 0px black, -21.25px 21.25px 0px black, -21.5px 21.5px 0px black, -21.75px 21.75px 0px black, -22px 22px 0px black, -22.25px 22.25px 0px black, -22.5px 22.5px 0px black, -22.75px 22.75px 0px black, -23px 23px 0px black, -23.25px 23.25px 0px black, -23.5px 23.5px 0px black, -23.75px 23.75px 0px black, -24px 24px 0px black, -24.25px 24.25px 0px black, -24.5px 24.5px 0px black, -24.75px 24.75px 0px black, -25px 25px 0px black, -25.25px 25.25px 0px black, -25.5px 25.4px 0px black, -25.75px 25.74px 0px black, -26px 26px 0px black, -26.25px 26.25px 0px black, -26.5px 26.5px 0px black, -26.75px 26.75px 0px black, -27px 27px 0px black, -27.25px 27.25px 0px black, -27.5px 27.5px 0px black, -27.75px 27.75px 0px black, -28px 28px 0px black, -28.25px 28.25px 0px black, -28.5px 28.5px 0px black, -28.75px 28.75px 0px black, -29px 29px 0px black, -29.25px 29.25px 0px black, -29.5px 29.5px 0px black, -29.75px 29.75px 0px black, -30px 30px 0px black, -30.25px 30.25px 0px black, -30.5px 30.5px 0px black, -30.75px 30.75px 0px black, -31px 31px 0px black, -31.25px 31.25px 0px black, -31.5px 31.5px 0px black, -31.75px 31.75px 0px black, -32px 32px 0px black, -32.25px 32.25px 0px black, -32.5px 32.5px 0px black, -32.75px 32.75px 0px black, -33px 33px 0px black, -33.25px 33.25px 0px black, -33.5px 33.5px 0px black, -33.75px 33.75px 0px black, -34px 34px 0px black, -34.25px 34.25px 0px black, -34.5px 34.5px 0px black, -34.75px 34.75px 0px black, -35px 35px 0px black, -35.25px 35.25px 0px black, -35.5px 35.5px 0px black, -35.75px 35.75px 0px black, -36px 36px 0px black, -36.25px 36.25px 0px black, -36.5px 36.5px 0px black, -36.75px 36.75px 0px black, -37px 37px 0px black, -37.25px 37.25px 0px black, -37.5px 37.5px 0px black, -37.75px 37.75px 0px black, -38px 38px 0px black, -38.25px 38.25px 0px black, -38.5px 38.5px 0px black, -38.75px 38.75px 0px black, -39px 39px 0px black, -39.25px 39.25px 0px black, -39.5px 39.5px 0px black, -39.75px 39.75px 0px black, -40px 40px 0px black, -40.25px 40.25px 0px black, -40.5px 40.5px 0px black, -40.75px 40.75px 0px black, -41px 41px 0px black, -41.25px 41.25px 0px black, -41.5px 41.5px 0px black, -41.75px 41.75px 0px black, -42px 42px 0px black;
+  border: 0.6rem black solid;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container {
+  width: 100%;
+  height: auto;
+  min-height: 40rem;
+  padding: 0rem 0.5rem;
+  border: white solid 0.2rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgb(0, 0, 0) 100%);
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_reg_heading {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0rem 4rem 0rem;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_reg_form {
+  margin: 0rem 0rem 2rem 0rem;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_reg_form .login_reg_form_item {
+  width: 100%;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_reg_form .login_reg_form_item .login_reg_form_inputField {
+  display: flex;
+  width: 100%;
+  height: 1.8rem;
+  margin: 0.5rem 0rem;
+  border: black solid 0.2rem;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_reg_form .forgotten_password_link {
+  color: black;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_reg_form .forgotten_password_link:hover {
+  color: red;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_reg_form .login_reg_button_container {
+  margin: 2rem 0rem 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_end_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_end_container .login_notRegistered_container {
+  width: 50%;
+  height: 100%;
+  margin: 14rem 0rem 2rem 0rem;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_end_container .login_notRegistered_container .notRegistered_link {
+  color: white;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_end_container .login_notRegistered_container .notRegistered_link:hover {
+  color: red;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .login_end_container .login_otherAccounts_container {
+  width: 50%;
+  height: 100%;
+  margin: 1rem 0rem 0.8rem 0rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .reg_end_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.login_reg_page .login_reg_outer_container .login_reg_inner_container .reg_end_container .reg_otherAccounts_container {
+  width: 50%;
+  margin: 1rem 0rem 0.8rem 0rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=login-and-registration.css.map */

@@ -1,0 +1,584 @@
+@import './variables.scss';
+@import './box-shadows.scss';
+@import './animations.scss';
+
+// mixins for standardized buttons
+
+@mixin button-medium {
+  width: 4rem;
+  height: 2rem;
+  @include text-font-small;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 2.2px;
+  @include flex-center-center;
+  @include medium-leftSide-button-boxShadow; // see variables.scss for boxShadow types
+  &:active {
+    @include medium-button-click-animation;
+  }
+}
+
+@mixin button-large-leftSide-BoxShadow {
+  box-sizing: border-box;
+  width: 8rem;
+  height: 4rem;
+  @include text-font-medium;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 3px;
+  color: black;
+  @include large-button-leftSide-boxShadow;
+  @include flex-center-center;
+  &:active {
+    @include large-button-click-animation;
+  }
+}
+@mixin button-large-rightSide-BoxShadow {
+  width: 8rem;
+  height: 4rem;
+  @include text-font-medium;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid black 3px;
+  color: black;
+  @include large-button-rightSide-boxShadow;
+  @include flex-center-center;
+  &:active {
+    @include large-button-click-animation;
+  }
+}
+@mixin button-xl {
+  width: 16rem;
+  height: 8rem;
+  cursor: pointer;
+  @include button-font-xl;
+  text-align: center;
+  text-decoration: none;
+  @include flex-center-center;
+  &:active {
+    @include xl-button-animation;
+  }
+}
+
+//? specific button types
+
+// Button External Link Styling
+
+.navbar_navlink {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar_shopping_cart_navlink {
+  @include flex-center-center;
+  color: black;
+  text-decoration: none;
+}
+
+.button_link {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+}
+
+// Standardised small & medium button classes including color & hover properties
+
+.navbar_button {
+  background-color: $colorOne;
+  @include button-medium;
+  color: black;
+
+  &:hover {
+    background-color: $colorFour;
+    color: blue;
+  }
+}
+
+.navbar_button_user_loggedIn {
+  padding-left: 0.7rem;
+  background-color: $buttonActivated;
+  color: black;
+  width: 4rem;
+  height: 2rem;
+  @include text-font-small;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: solid black 2.2px;
+  @include flex-center-center;
+  @include medium-leftSide-button-boxShadow; // see variables.scss for boxShadow types
+  &:active {
+    @include medium-button-click-animation;
+  }
+
+  &:hover {
+    background-color: $colorFour;
+    color: blue;
+  }
+
+  .user_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 4rem;
+    height: 2rem;
+    z-index: 1;
+    &:hover {
+      display: block;
+    }
+  }
+}
+.navbar_button_user_loggedOut {
+  padding-left: 0.7rem;
+  background-color: $colorOne;
+  color: black;
+  width: 4rem;
+  height: 2rem;
+  @include text-font-small;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: solid black 2.2px;
+  @include flex-center-center;
+  @include medium-leftSide-button-boxShadow; // see variables.scss for boxShadow types
+  &:active {
+    @include medium-button-click-animation;
+  }
+
+  &:hover {
+    background-color: $colorFour;
+    color: blue;
+  }
+}
+
+.navbar_shopping_cart_button {
+  cursor: pointer;
+  position: relative;
+  font-size: 1.2rem;
+  width: 2.5rem;
+  height: 2rem;
+  border: 2.2px solid black;
+  color: black;
+  @include flex-center-center;
+  background-color: $colorOne;
+  @include medium-leftSide-button-boxShadow;
+
+  &:hover {
+    background-color: $colorFour;
+    color: blue;
+  }
+  &:active {
+    @include medium-button-click-animation;
+  }
+}
+.navbar_shopping_cart_button_itemsInCart {
+  cursor: pointer;
+  position: relative;
+  font-size: 1.2rem;
+  width: 2.5rem;
+  height: 2rem;
+  border: 2.2px solid black;
+  color: black;
+  @include flex-center-center;
+  background-color: $buttonActivated;
+  @include medium-leftSide-button-boxShadow;
+
+  &:hover {
+    background-color: red;
+    color: blue;
+  }
+  &:active {
+    @include medium-button-click-animation;
+  }
+
+  .cart_number_items {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    border: red solid 2px;
+    background-color: red;
+    border-radius: 50%;
+  }
+}
+
+.button_medium_colorOne {
+  @include button-medium;
+  background-color: $colorOne;
+  color: black;
+  &:hover {
+    background-color: $colorFour;
+  }
+}
+.button_medium_colorTwo {
+  @include button-medium;
+  background-color: $colorTwo;
+  &:hover {
+    background-color: $colorFour;
+  }
+}
+.button_medium_colorThree {
+  @include button-medium;
+  background-color: $colorThree;
+  &:hover {
+    background-color: $colorFour;
+  }
+}
+
+.button_medium_colorFour {
+  @include button-medium;
+  background-color: $colorFour;
+  &:hover {
+    background-color: $colorFive;
+  }
+}
+
+// Standardised large button classes including color & hover properties
+
+.button_large_colorOne {
+  @include button-large-leftSide-BoxShadow;
+  background-color: $colorOne;
+  &:hover {
+    background-color: $colorFive;
+  }
+}
+.button_large_rightSideBoxShadow_colorOne {
+  @include button-large-rightSide-BoxShadow;
+  background-color: $colorOne;
+  &:hover {
+    background-color: $colorFive;
+  }
+}
+.button_large_colorTwo {
+  @include button-large-leftSide-BoxShadow;
+  background-color: $colorTwo;
+  &:hover {
+    background-color: $colorFive;
+  }
+}
+.button_large_colorThree {
+  @include button-large-leftSide-BoxShadow;
+  background-color: $colorThree;
+  &:hover {
+    background-color: $colorFive;
+  }
+}
+.button_large_rightSideBoxShadow_colorThree {
+  @include button-large-rightSide-BoxShadow;
+  background-color: $colorThree;
+  &:hover {
+    background-color: $colorFive;
+  }
+}
+.button_large_colorFour {
+  @include button-large-leftSide-BoxShadow;
+  background-color: $colorFour;
+  text-decoration: none;
+  &:hover {
+    background-color: $colorFive;
+  }
+}
+.button_large_rightSideBoxShadow_colorFour {
+  @include button-large-rightSide-BoxShadow;
+  background-color: $colorFour;
+  &:hover {
+    background-color: $colorFive;
+  }
+}
+
+// Irregular Sized / Custom Buttons
+
+.button_phone_footer {
+  cursor: pointer;
+  background-color: #000000;
+  width: 12rem;
+  height: 4rem;
+  @include text-font-medium;
+  color: white;
+  border: solid white 3px;
+  @include large-footer-button-boxShadow;
+  @include flex-center-center;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    background-color: gray;
+  }
+  &:active {
+    @include large-button-click-animation;
+  }
+}
+
+.button_large_footer {
+  cursor: pointer;
+  background-color: #000000;
+  width: 8rem;
+  height: 4rem;
+  @include text-font-medium;
+  border: solid white 3px;
+  box-shadow: -3px 3px 0px 3px white;
+  @include flex-center-center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login_reg_button_wrapper {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+
+  .button_login_register {
+    height: 3rem;
+    width: 6rem;
+    font-family: 'League Spartan', sans-serif;
+    @include text-font-medium;
+    text-align: center;
+    text-decoration: none;
+    border: solid black 2.2px;
+    color: black;
+    cursor: pointer;
+    @include large-button-leftSide-boxShadow;
+    @include flex-center-center;
+    background-color: white;
+    &:hover {
+      background-color: lightgray;
+    }
+    &:active {
+      @include large-button-click-animation;
+    }
+  }
+}
+
+.button_add_blog_post {
+  width: 6rem;
+  height: 3rem;
+  font-family: 'League Spartan', sans-serif;
+  @include text-font-medium;
+  text-align: center;
+  text-decoration: none;
+  border: solid black 2.2px;
+  color: black;
+  cursor: pointer;
+  @include large-button-leftSide-boxShadow;
+  @include flex-center-center;
+  background-color: white;
+  &:hover {
+    background-color: lightgray;
+  }
+  &:active {
+    @include large-button-click-animation;
+  }
+}
+
+.login_with_facebook_button {
+  color: black;
+  display: block;
+  font-size: 0.8rem;
+  text-decoration: none;
+  width: 100%;
+  height: 2rem;
+  margin: 8rem 1rem 1rem 1rem;
+  padding: 0.1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &:hover {
+    background-color: lightgray;
+  }
+  .login_with_facebook_button_icon {
+    font-size: 1.3rem;
+    margin: 0rem 1rem 0rem 0.5rem;
+  }
+}
+
+.login_with_google_button {
+  color: black;
+  display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-decoration: none;
+  width: 100%;
+  height: 2rem;
+  margin: 0rem 1rem 0rem 1rem;
+  padding: 0.1rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &:hover {
+    background-color: lightgray;
+  }
+  .login_with_google_button_icon {
+    font-size: 1.3rem;
+    margin: 0rem 1rem 0rem 0.5rem;
+  }
+}
+
+.imprint_medium_nav_button {
+  cursor: pointer;
+  @include text-font-xs;
+  width: 4rem;
+  height: 2rem;
+  background-color: black;
+  border: white solid 2px;
+  text-decoration: none;
+  color: white;
+  @include flex-center-center;
+  text-align: center;
+  text-decoration: none;
+  @include medium-button-rightSide-boxShadow-secondaryColor;
+  &:hover {
+    background-color: gray;
+  }
+  &:active {
+    @include medium-button-click-animation;
+  }
+}
+
+.addToCart_button_small {
+  cursor: pointer;
+  width: 12rem;
+  height: 3rem;
+  color: black;
+  border: solid black 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  @include flex-center-center;
+  @include large-button-leftSide-boxShadow;
+  background-color: $colorOne;
+  color: black;
+  &:hover {
+    background-color: $colorFour;
+  }
+  &:active {
+    @include medium-button-click-animation;
+  }
+  .shop_addToCart_small_button_icon {
+    font-size: 1.5rem;
+    margin: 0rem 1.5rem 0.3rem 0rem;
+  }
+}
+.addToCart_button_large {
+  width: 24rem;
+  height: 6rem;
+  color: black;
+  border: solid black 4px;
+  text-decoration: none;
+  @include flex-center-center;
+  @include large-button-leftSide-boxShadow;
+  .shop_addToCart_large_button_icon {
+    font-size: 1.5rem;
+    margin: 0rem 1rem 0.3rem 0rem;
+  }
+}
+
+.plus_minus_product_number_button_small {
+  width: 8rem;
+  height: 2rem;
+  color: black;
+  border: solid black 2px;
+  text-decoration: none;
+  @include flex-center-between;
+  @include medium-leftSide-button-boxShadow;
+  background-color: $colorFour;
+  color: black;
+
+  .plus_minus_button_icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    &:hover {
+      color: $colorOne;
+    }
+  }
+  .plus_minus_button_productNumber {
+    font-size: 1.2rem;
+    margin: 0rem 1.5rem;
+  }
+}
+.plus_minus_product_number_button_large {
+  width: 12rem;
+  height: 3rem;
+  color: black;
+  border: solid black 3px;
+  text-decoration: none;
+  font-size: 3.5rem;
+  @include flex-center-between;
+  @include large-button-leftSide-boxShadow;
+  background-color: $colorOne;
+  color: black;
+
+  .plus_minus_button_icon {
+    cursor: pointer;
+    &:hover {
+      color: $colorFour;
+    }
+  }
+  .plus_minus_button_productNumber {
+    font-size: 2.2rem;
+    margin: 0rem 2rem;
+  }
+}
+
+.delete_item_button {
+  color: black;
+  width: 8rem;
+  height: 2rem;
+  @include flex-center-between;
+  cursor: pointer;
+  border: none;
+  padding: 0rem;
+  background: transparent;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  .delete_item_button_icon {
+    margin: 0rem 0.2rem 0rem 0rem;
+    font-size: 1.5rem;
+    &:hover {
+      color: $colorFive;
+    }
+  }
+  &:hover {
+    color: $colorFive;
+  }
+}
+
+.payment_address_button_small {
+  width: 8rem;
+  height: 2rem;
+  padding: 1rem 0rem;
+  cursor: pointer;
+  color: black;
+  border: solid black 3px;
+  background: transparent;
+  text-decoration: none;
+  text-align: center;
+  @include flex-center-center;
+  @include medium-leftSide-button-boxShadow;
+  color: black;
+  @include text-font-small;
+  &:hover {
+    background-color: $colorFive;
+  }
+}
+
+.minor_dialog_submit_button {
+  cursor: pointer;
+  height: 1.6rem;
+  border: 2px solid black;
+  &:hover {
+    color: blue;
+    background-color: darkgrey;
+  }
+}

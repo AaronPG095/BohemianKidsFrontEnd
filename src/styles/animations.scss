@@ -1,0 +1,63 @@
+@import './variables.scss';
+
+// ? OnClick animations
+
+@mixin medium-button-click-animation {
+  // animation-name: click;
+
+  // animation-duration: 0.2s;
+  transform: translateY(8px);
+  box-shadow: 0 0 0;
+  // @keyframes click {
+  //   0% {
+  //     transform: translateY(0px);
+  //   }
+  //   50% {
+  //     transform: translateY(2px);
+  //     box-shadow: 0 0 0;
+  //   }
+  //   100% {
+  //     transform: translateY(4px);
+  //     box-shadow: 0 0 0;
+  //   }
+  // }
+}
+
+@mixin large-button-click-animation {
+  box-shadow: 0 0 0;
+  transform: translateY(12px);
+}
+
+@mixin xl-button-click-animation {
+  box-shadow: 0 0 0;
+  transform: translateY(12px);
+}
+
+// // ? :hover animations
+
+// @mixin medium-button-hover-animation {
+//   &:hover {
+//     transform: translateY(-2px);
+//     transition: all 0.3s ease-in-out;
+//   }
+// }
+// @mixin large-button-hover-animation {
+//   &:hover {
+//     transform: translateY(-4px);
+//     transition: all 0.3s ease-in-out;
+//   }
+// }
+
+// @mixin small-image-hover-animation {
+//   &:hover {
+//     transform: translateY(-5px);
+//     transition: all 0.3s ease-in-out;
+//   }
+// }
+
+// @mixin large-image-hover-animation {
+//   &:hover {
+//     transform: translateY(-5px);
+//     transition: all 0.3s ease-in-out;
+//   }
+// }

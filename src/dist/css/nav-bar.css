@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Roboto:wght@500&display=swap");
+.navbar {
+  background-color: #ff8b8b;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .navbar {
+    padding: 0 0rem;
+  }
+}
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0 6rem;
+  }
+}
+@media (min-width: 992px) {
+  .navbar {
+    padding: 0 9rem;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 0 12rem;
+  }
+}
+.navbar .navbar_content .navbar_content_container {
+  padding: 0.5rem 1rem 0rem 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.navbar .navbar_content .navbar_content_container .navLink {
+  text-decoration: none;
+  color: black;
+}
+.navbar .navbar_content .navbar_content_container .navLink:hover {
+  color: red;
+}
+.navbar .navbar_content .navbar_content_container .active_navLink {
+  text-decoration: none;
+  background-color: #fc7900;
+  color: white;
+}/*# sourceMappingURL=nav-bar.css.map */

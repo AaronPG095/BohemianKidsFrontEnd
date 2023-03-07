@@ -1,0 +1,82 @@
+@import './variables.scss';
+@import './buttons.scss';
+@import './box-shadows.scss';
+
+.user_info_main_page {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #5effe5 37.76%, #5e9eff 68.49%);
+  @include flex-center-center;
+
+  .user_info_container {
+    border: black 14px solid;
+    width: 80%;
+    max-width: 32rem;
+    height: 100%;
+    margin: 6rem 0rem 6rem 2.5rem;
+    @include image_portrait_boxShadow_smallScreen;
+
+    .user_info_heading {
+      @include text-font-medium-large;
+      text-align: center;
+      padding: 2rem 0rem;
+    }
+    .user_info_content_container {
+      width: 100%;
+      height: 100%;
+    }
+    .user_info_calculation_container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      .info-container {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .display-flex-column-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 50vh;
+          .input-style {
+            border: solid 2px #8bffcf;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            width: 100%;
+            font-size: 1.2rem;
+            color: rgb(28, 17, 17);
+            outline: none;
+            background-color: #81209c55;
+          }
+        }
+      }
+      .user_info_labels_container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        width: 55%;
+
+        .user_info_label {
+          margin: 1rem 0rem 1rem 3rem;
+        }
+      }
+    }
+    .user_info_button_container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 1.5rem 1rem;
+    }
+  }
+}
+input[type='text'].input-style::-webkit-input-placeholder,
+input[type='email'].input-style::-webkit-input-placeholder {
+  color: rgba(143, 225, 11, 0.62);
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
