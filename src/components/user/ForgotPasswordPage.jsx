@@ -22,9 +22,12 @@ function ForgotPasswordPage() {
     event.preventDefault();
     try {
       axios
-        .post(`http://localhost:5001/users/forgot-password/`, {
-          email,
-        })
+        .post(
+          `https://bohemian-kids-backend-server.onrender.com/users/forgot-password/`,
+          {
+            email,
+          }
+        )
         .then((res) => {
           setSuccess(true);
           window.localStorage.setItem('isAuth', 'false');

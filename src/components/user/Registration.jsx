@@ -35,14 +35,17 @@ function Register() {
     event.preventDefault();
     setIsRegister(true);
     axios
-      .post('http://localhost:5001/users/register', {
-        fName: user.fName,
-        lName: user.lName,
-        email: user.email,
-        password: user.password,
-        confirmPassword: user.confirmPassword,
-        title: user.title,
-      })
+      .post(
+        'https://bohemian-kids-backend-server.onrender.com/users/register',
+        {
+          fName: user.fName,
+          lName: user.lName,
+          email: user.email,
+          password: user.password,
+          confirmPassword: user.confirmPassword,
+          title: user.title,
+        }
+      )
       .then((response) => {
         setIsRegister(false);
         setIsSuccess(true);

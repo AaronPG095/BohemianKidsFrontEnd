@@ -10,9 +10,12 @@ export const EmailVerificationLandingPage = () => {
   useEffect(() => {
     const loadVerification = async () => {
       try {
-        await axios.put('http://localhost:5001/users/verify-email', {
-          verificationString,
-        });
+        await axios.put(
+          'https://bohemian-kids-backend-server.onrender.com/users/verify-email',
+          {
+            verificationString,
+          }
+        );
         setIsSuccess(true);
         setIsLoading(false);
       } catch (error) {

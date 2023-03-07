@@ -18,7 +18,7 @@ function UploadImage({ setPost }) {
     data.append('image', file);
     axios
       .post(
-        `http://localhost:5001/users/uploadImage`, // url for replace
+        `https://bohemian-kids-backend-server.onrender.com/users/uploadImage`, // url for replace
         data
       )
       .then((res) => {
@@ -35,15 +35,15 @@ function UploadImage({ setPost }) {
   return (
     <div>
       <input
-        id='file'
-        type='file'
+        id="file"
+        type="file"
         onChange={handleSelectFile}
         multiple={false}
-        name='image'
+        name="image"
       />
       {file && (
         <>
-          <button onClick={handleUpload} className=''>
+          <button onClick={handleUpload} className="">
             {loading ? 'Uploading...' : 'Upload'}
           </button>
         </>

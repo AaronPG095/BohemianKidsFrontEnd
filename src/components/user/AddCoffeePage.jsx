@@ -28,19 +28,22 @@ function AddCoffeePage() {
     axios
       // This address will change depends on PORT
       // you are using or after uploading
-      .post('http://localhost:5001/users/addProduct', {
-        type: coffee.type,
-        name: coffee.name,
-        processing: coffee.processing,
-        masl: coffee.masl,
-        size: coffee.size,
-        origin: coffee.origin,
-        variety: coffee.variety,
-        cropYear: coffee.cropYear,
-        price: coffee.price,
-        dryingTime: coffee.dryingTime,
-        flavourNotes: coffee.flavourNotes,
-      })
+      .post(
+        'https://bohemian-kids-backend-server.onrender.com/users/addProduct',
+        {
+          type: coffee.type,
+          name: coffee.name,
+          processing: coffee.processing,
+          masl: coffee.masl,
+          size: coffee.size,
+          origin: coffee.origin,
+          variety: coffee.variety,
+          cropYear: coffee.cropYear,
+          price: coffee.price,
+          dryingTime: coffee.dryingTime,
+          flavourNotes: coffee.flavourNotes,
+        }
+      )
       .then((user) => {
         setCoffee({
           type: '',

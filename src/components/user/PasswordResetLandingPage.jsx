@@ -26,11 +26,14 @@ function PasswordResetLandingPage() {
     event.preventDefault();
     try {
       axios
-        .patch(`http://localhost:5001/users/reset-password/`, {
-          newPassword: passwords.newPassword,
-          confirmPassword: passwords.confirmPassword,
-          passwordResetCode,
-        })
+        .patch(
+          `https://bohemian-kids-backend-server.onrender.com/users/reset-password/`,
+          {
+            newPassword: passwords.newPassword,
+            confirmPassword: passwords.confirmPassword,
+            passwordResetCode,
+          }
+        )
         .then((res) => {
           setIsSuccess(true);
           window.localStorage.setItem('isAuth', 'false');
@@ -60,7 +63,7 @@ function PasswordResetLandingPage() {
   }
   return isSuccess ? (
     <div
-      className='bg'
+      className="bg"
       style={{
         display: 'flex',
         alignItems: 'center',
@@ -71,13 +74,13 @@ function PasswordResetLandingPage() {
       <h2>Success</h2>
       <p>Your password is changed.</p>
       <p>
-        Click here to <Link to='/users/login'>login</Link> or wait to be
+        Click here to <Link to="/users/login">login</Link> or wait to be
         redirected.
       </p>
     </div>
   ) : (
     <div
-      className='bg'
+      className="bg"
       style={{
         display: 'flex',
         alignItems: 'center',
@@ -88,33 +91,33 @@ function PasswordResetLandingPage() {
       <form onSubmit={handleSubmit}>
         <h3>Enter new password: </h3>
         {auth.contextValue.user.msg && <div>{auth.contextValue.user.msg}</div>}
-        <label htmlFor='newPassword'>
+        <label htmlFor="newPassword">
           New Password{' '}
-          <span className='login-span'>
+          <span className="login-span">
             (At least 6 characters and includes a number and a special
             character)
           </span>
         </label>
         <input
-          type='password'
-          placeholder='newPassword'
-          name='newPassword'
-          id='newPassword'
+          type="password"
+          placeholder="newPassword"
+          name="newPassword"
+          id="newPassword"
           value={passwords.newPassword}
           onChange={handleChange}
         />
-        <label htmlFor='confirmPassword'>Confirm Password</label>
+        <label htmlFor="confirmPassword">Confirm Password</label>
         <input
-          type='password'
-          placeholder='confirmPassword'
-          name='confirmPassword'
-          id='confirmPassword'
+          type="password"
+          placeholder="confirmPassword"
+          name="confirmPassword"
+          id="confirmPassword"
           value={passwords.confirmPassword}
           onChange={handleChange}
         />
-        <button type='submit'>Confirm</button>
+        <button type="submit">Confirm</button>
         <div>
-          <Link to='/'>Go to home page</Link>
+          <Link to="/">Go to home page</Link>
         </div>
       </form>
     </div>

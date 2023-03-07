@@ -34,7 +34,7 @@ export const AuthProvider = ({ children }) => {
         axios
           // This address will change depends on PORT
           // you are using or after uploading
-          .get('http://localhost:5001/protected', {
+          .get('https://bohemian-kids-backend-server.onrender.com/protected', {
             headers: {
               Authorization: token,
             },
@@ -59,7 +59,7 @@ export const AuthProvider = ({ children }) => {
       localStorage.removeItem('expires');
       localStorage.setItem('isAuth', 'false');
       localStorage.removeItem('user_id');
-      localStorage.removeItem('role')
+      localStorage.removeItem('role');
       setUser({
         isAuth: false,
         msg: '',
@@ -72,7 +72,7 @@ export const AuthProvider = ({ children }) => {
     axios
       // This address will change depends on PORT
       // you are using or after uploading
-      .post('http://localhost:5001/users/login', {
+      .post('https://bohemian-kids-backend-server.onrender.com/users/login', {
         email: user.email,
         password: user.password,
       })
@@ -97,7 +97,7 @@ export const AuthProvider = ({ children }) => {
     axios
       // This address will change depends on PORT
       // you are using or after uploading
-      .get('http://localhost:5001/users/logout')
+      .get('https://bohemian-kids-backend-server.onrender.com/users/logout')
       .then((respond) => {
         addCurrentCart(products);
         dispatchCartProductState({ type: 'INITIALIZATION', payload: [] });

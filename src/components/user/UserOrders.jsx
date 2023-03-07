@@ -11,7 +11,10 @@ function UserOrders() {
     const userID = localStorage.getItem('user_id');
 
     axios
-      .post('http://localhost:5001/orders/getOrders', { userID })
+      .post(
+        'https://bohemian-kids-backend-server.onrender.com/orders/getOrders',
+        { userID }
+      )
       .then((userOrders) => {
         setOrders(userOrders.data.userOrders);
         setIsLoading(false);

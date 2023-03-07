@@ -23,14 +23,17 @@ function AddMerchandisePage() {
     axios
       // This address will change depends on PORT
       // you are using or after uploading
-      .post('http://localhost:5001/users/addMerch', {
-        type: merchandise.type,
-        name: merchandise.name,
-        material: merchandise.material,
-        size: merchandise.size,
-        price: merchandise.price,
-        description: merchandise.description,
-      })
+      .post(
+        'https://bohemian-kids-backend-server.onrender.com/users/addMerch',
+        {
+          type: merchandise.type,
+          name: merchandise.name,
+          material: merchandise.material,
+          size: merchandise.size,
+          price: merchandise.price,
+          description: merchandise.description,
+        }
+      )
       .then((user) => {
         setMerchandise({
           type: '',
@@ -63,94 +66,94 @@ function AddMerchandisePage() {
     >
       <form
         onSubmit={handleAddCoffee}
-        className='login-form'
+        className="login-form"
         style={{
           display: 'flex',
           flexFlow: 'column nowrap',
         }}
       >
         <h4>Add Merch or equipment:</h4>
-        <label className='login-label' htmlFor='type'>
+        <label className="login-label" htmlFor="type">
           type: HAVE TO BE 'equipment' OR 'merchandise'
         </label>
         <textarea
-          className='login-textarea'
-          type='password'
-          placeholder='Type'
-          name='type'
-          id='type'
+          className="login-textarea"
+          type="password"
+          placeholder="Type"
+          name="type"
+          id="type"
           value={merchandise.type}
           onChange={handleChange}
-          rows='3'
+          rows="3"
         />
-        <label className='login-label' htmlFor='name'>
+        <label className="login-label" htmlFor="name">
           name
         </label>
         <textarea
-          className='login-textarea'
-          type='password'
-          placeholder='name'
-          name='name'
-          id='name'
+          className="login-textarea"
+          type="password"
+          placeholder="name"
+          name="name"
+          id="name"
           value={merchandise.name}
           onChange={handleChange}
-          rows='3'
+          rows="3"
         />
-        <label className='login-label' htmlFor='material'>
+        <label className="login-label" htmlFor="material">
           material
         </label>
         <textarea
-          className='login-textarea'
-          type='password'
-          placeholder='material'
-          name='material'
-          id='material'
+          className="login-textarea"
+          type="password"
+          placeholder="material"
+          name="material"
+          id="material"
           value={merchandise.material}
           onChange={handleChange}
-          rows='3'
+          rows="3"
         />
-        <label className='login-label' htmlFor='size'>
+        <label className="login-label" htmlFor="size">
           size:
         </label>
         <textarea
-          className='login-textarea'
-          type='password'
-          placeholder='size'
-          name='size'
-          id='size'
+          className="login-textarea"
+          type="password"
+          placeholder="size"
+          name="size"
+          id="size"
           value={merchandise.size}
           onChange={handleChange}
-          rows='3'
+          rows="3"
         />
-        <label className='login-label' htmlFor='price'>
+        <label className="login-label" htmlFor="price">
           price: NUMBER
         </label>
         <textarea
-          className='login-textarea'
-          type='password'
-          placeholder='price'
-          name='price'
-          id='price'
+          className="login-textarea"
+          type="password"
+          placeholder="price"
+          name="price"
+          id="price"
           value={merchandise.price}
           onChange={handleChange}
-          rows='3'
+          rows="3"
         />
-        <label className='login-label' htmlFor='description'>
+        <label className="login-label" htmlFor="description">
           description:
         </label>
         <textarea
-          className='login-textarea'
-          type='password'
-          placeholder='description'
-          name='description'
-          id='description'
+          className="login-textarea"
+          type="password"
+          placeholder="description"
+          name="description"
+          id="description"
           value={merchandise.description}
           onChange={handleChange}
-          rows='8'
+          rows="8"
         />
         <button
-          type='submit'
-          className='login-button'
+          type="submit"
+          className="login-button"
           style={{
             marginTop: '20px',
             height: '50px',

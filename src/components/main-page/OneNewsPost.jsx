@@ -19,7 +19,9 @@ function OneNewsPost() {
 
   function handlePostDelete() {
     axios
-      .delete(`http://localhost:5001/posts/deletePost/${id}`)
+      .delete(
+        `https://bohemian-kids-backend-server.onrender.com/posts/deletePost/${id}`
+      )
       .then((res) => {
         dispatchNewsState({ type: 'DELETE_POST', payload: id });
         setIsDeleted(true);

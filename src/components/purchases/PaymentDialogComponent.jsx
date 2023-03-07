@@ -42,17 +42,23 @@ function PaymentDialog() {
     axios
       // This address will change depends on PORT
       // you are using or after uploading
-      .patch('http://localhost:5001/users/updateUser', {
-        address: user.address.length > 0 ? user.address : userInfoState.address,
-        country: user.country.length > 0 ? user.country : userInfoState.country,
-        zipCode: user.zipCode.length > 0 ? user.zipCode : userInfoState.zipCode,
-        state: user.state.length > 0 ? user.state : userInfoState.state,
-        city: user.city.length > 0 ? user.city : userInfoState.city,
-        title: user.title.length > 0 ? user.title : userInfoState.title,
-        fName: user.fName.length > 0 ? user.fName : userInfoState.fName,
-        lName: user.lName.length > 0 ? user.lName : userInfoState.lName,
-        userId: userId,
-      })
+      .patch(
+        'https://bohemian-kids-backend-server.onrender.com/users/updateUser',
+        {
+          address:
+            user.address.length > 0 ? user.address : userInfoState.address,
+          country:
+            user.country.length > 0 ? user.country : userInfoState.country,
+          zipCode:
+            user.zipCode.length > 0 ? user.zipCode : userInfoState.zipCode,
+          state: user.state.length > 0 ? user.state : userInfoState.state,
+          city: user.city.length > 0 ? user.city : userInfoState.city,
+          title: user.title.length > 0 ? user.title : userInfoState.title,
+          fName: user.fName.length > 0 ? user.fName : userInfoState.fName,
+          lName: user.lName.length > 0 ? user.lName : userInfoState.lName,
+          userId: userId,
+        }
+      )
       .then((user) => {
         billingAddressForm.current.style.display = 'none';
         dispatchUserInfoState({
@@ -81,7 +87,10 @@ function PaymentDialog() {
     setIsLoading(true);
     const userId = window.localStorage.getItem('user_id');
     axios
-      .post('http://localhost:5001/users/getAddressData', { userId })
+      .post(
+        'https://bohemian-kids-backend-server.onrender.com/users/getAddressData',
+        { userId }
+      )
       .then((userData) => {
         setIsLoading(false);
         dispatchUserInfoState({
@@ -197,19 +206,22 @@ function PaymentDialog() {
   function handlePayment() {
     const userId = localStorage.getItem('user_id');
     axios
-      .post('http://localhost:5001/orders/addOrder', {
-        userId: userId,
-        products: cartProductState,
-        price: total,
-        billingAddress: userInfoState,
-        deliveryAddress: deliveryForm.current.disabled
-          ? userInfoState
-          : userDeliveryAddress,
-        paymentMethod: paymentMethod,
-        paymentDetails: paymentDetails,
-        shippingMethod: shippingMethod,
-        orderDate: new Date(),
-      })
+      .post(
+        'https://bohemian-kids-backend-server.onrender.com/orders/addOrder',
+        {
+          userId: userId,
+          products: cartProductState,
+          price: total,
+          billingAddress: userInfoState,
+          deliveryAddress: deliveryForm.current.disabled
+            ? userInfoState
+            : userDeliveryAddress,
+          paymentMethod: paymentMethod,
+          paymentDetails: paymentDetails,
+          shippingMethod: shippingMethod,
+          orderDate: new Date(),
+        }
+      )
       .then((order) => {
         dispatchCartProductState({
           type: 'INITIALIZATION',

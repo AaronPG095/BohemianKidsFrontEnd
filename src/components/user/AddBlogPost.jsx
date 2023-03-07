@@ -28,7 +28,7 @@ function AddBlogPost() {
     e.preventDefault();
     setIsLoading(true);
     axios
-      .put('http://localhost:5001/posts/addPost', {
+      .put('https://bohemian-kids-backend-server.onrender.com/posts/addPost', {
         title: post.title,
         description: post.description,
         img: post.img,

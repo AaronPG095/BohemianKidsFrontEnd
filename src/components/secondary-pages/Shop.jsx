@@ -32,7 +32,7 @@ function Shop() {
   //Request to fetch products from database
   useEffect(() => {
     axios
-      .get('http://localhost:5001/products/')
+      .get('https://bohemian-kids-backend-server.onrender.com/products/')
       .then((items) => {
         dispatchShopProductState({
           type: 'INITIAL',

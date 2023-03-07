@@ -15,7 +15,9 @@ function IntroNews() {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get('http://localhost:5001/posts/getAllPosts')
+      .get(
+        'https://bohemian-kids-backend-server.onrender.com/posts/getAllPosts'
+      )
       .then((posts) => {
         dispatchNewsState({
           type: 'NEWS_INITIALIZATION',
