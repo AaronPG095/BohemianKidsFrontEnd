@@ -89,12 +89,21 @@
           }
 
           input[type='text'],
-          input[type='number'] {
+          input[type='number'],
+          select {
             background: transparent;
             height: 1.8rem;
             margin: 0.3rem;
             border: black solid 0.15rem;
           }
+          select {
+            color: gray;
+          }
+          select:disabled {
+      
+            border: solid rgb(92, 86, 86) 0.15rem;
+          }
+
           /*Removing the range selection button of input type number*/
           input::-webkit-outer-spin-button,
           input::-webkit-inner-spin-button {

@@ -83,145 +83,153 @@ function Register() {
 
   return (
     <>
-      <main className="login_reg_page">
+      <main className='login_reg_page'>
         {isSuccess ? (
           <VerifyEmail />
         ) : (
-          <article className="login_reg_outer_container">
-            <section className="login_reg_inner_container">
+          <article className='login_reg_outer_container'>
+            <section className='login_reg_inner_container'>
               <>
-                <h1 className="login_reg_heading">REGISTER</h1>{' '}
+                <h1 className='login_reg_heading'>REGISTER</h1>{' '}
                 {registerMessage && (
-                  <span className="login_error-message">{registerMessage}</span>
+                  <span className='login_error-message'>{registerMessage}</span>
                 )}
                 <form
                   onSubmit={handleSubmit}
-                  className="login_reg_form"
-                  action=""
+                  className='login_reg_form'
+                  action=''
                 >
-                  <label className="login_reg_form_item" htmlFor="title">
+                  <label className='login_reg_form_item' htmlFor='title'>
                     TITLE:
                     <select
-                      className="login_reg_form_inputField"
-                      type="text"
-                      placeholder="Your title"
-                      name="title"
-                      id="title"
+                      className='login_reg_form_inputField'
+                      type='text'
+                      placeholder='Your title'
+                      name='title'
+                      id='title'
                       value={user.title}
                       onChange={handleChange}
                     >
                       <option default>select title</option>
-                      <option value="Mrs.">Mrs.</option>
-                      <option value="Mr.">Mr.</option>
-                      <option value="Ms.">Ms.</option>
-                      <option value="Miss">Miss</option>
+                      <option value='Mrs.'>Mrs.</option>
+                      <option value='Mr.'>Mr.</option>
+                      <option value='Ms.'>Ms.</option>
+                      <option value='Miss'>Miss</option>
                     </select>{' '}
                   </label>
-                  <label className="login_reg_form_item" htmlFor="">
+                  <label className='login_reg_form_item' htmlFor=''>
                     FIRST NAME
                     <input
                       onChange={handleChange}
                       value={user.fName}
-                      className="login_reg_form_inputField"
-                      type="text"
-                      name="fName"
+                      className='login_reg_form_inputField'
+                      type='text'
+                      name='fName'
                     />
                   </label>
-                  <label className="login_reg_form_item" htmlFor="">
+                  <label className='login_reg_form_item' htmlFor=''>
                     LAST NAME
                     <input
                       onChange={handleChange}
                       value={user.lName}
-                      className="login_reg_form_inputField"
-                      type="text"
-                      name="lName"
+                      className='login_reg_form_inputField'
+                      type='text'
+                      name='lName'
                     />
                   </label>
-                  <label className="login_reg_form_item" htmlFor="">
+                  <label className='login_reg_form_item' htmlFor=''>
                     EMAIL
                     <input
                       onChange={handleChange}
                       value={user.email}
-                      className="login_reg_form_inputField"
-                      type="email"
-                      name="email"
+                      className='login_reg_form_inputField'
+                      type='email'
+                      name='email'
                     />
                   </label>
 
-                  <label
-                    style={{ position: 'relative', zIndex: '0' }}
-                    className="login_reg_form_item"
-                    htmlFor=""
-                  >
+                  <label className='login_reg_form_item' htmlFor=''>
                     PASSWORD
-                    <span className="login-span">
+                    <span className='login-span'>
                       (At least 6 characters and includes a number and a special
                       character)
                     </span>
-                    <input
-                      ref={inputPassword}
-                      onChange={handleChange}
-                      value={user.password}
-                      className="login_reg_form_inputField"
-                      type="password"
-                      name="password"
-                    />
-                    <i
-                      ref={iconRef}
-                      className="far fa-eye"
-                      id="togglePassword"
-                      onClick={handleTogglePassword}
+                    <div
                       style={{
-                        position: 'absolute',
-                        textAlign: 'left',
-                        top: '46px',
-                        right: '-425px',
-                        cursor: 'pointer',
+                        position: 'relative',
+                        zIndex: '0',
+                        width: '100%',
                       }}
-                    ></i>
+                    >
+                      <input
+                        ref={inputPassword}
+                        onChange={handleChange}
+                        value={user.password}
+                        className='login_reg_form_inputField'
+                        type='password'
+                        name='password'
+                      />
+                      <i
+                        ref={iconRef}
+                        className='far fa-eye'
+                        id='togglePassword'
+                        onClick={handleTogglePassword}
+                        style={{
+                          position: 'absolute',
+                          textAlign: 'left',
+                          top: '6px',
+                          right: '5px',
+                          cursor: 'pointer',
+                        }}
+                      ></i>
+                    </div>
                   </label>
 
-                  <label
-                    style={{ position: 'relative', zIndex: '0' }}
-                    className="login_reg_form_item"
-                    htmlFor=""
-                  >
+                  <label className='login_reg_form_item' htmlFor=''>
                     CONFIRM PASSWORD
-                    <input
-                      ref={inputConfirmPassword}
-                      onChange={handleChange}
-                      className="login_reg_form_inputField"
-                      value={user.confirmPassword}
-                      type="password"
-                      name="confirmPassword"
-                    />
-                    <i
-                      ref={iconConfirmRef}
-                      className="far fa-eye"
-                      id="togglePassword"
-                      onClick={handleToggleConfirmPassword}
+                    <div
                       style={{
-                        position: 'absolute',
-                        textAlign: 'left',
-                        top: '30px',
-                        right: '15px',
-                        cursor: 'pointer',
+                        position: 'relative',
+                        zIndex: '0',
+
+                        width: '100%',
                       }}
-                    ></i>
+                    >
+                      <input
+                        ref={inputConfirmPassword}
+                        onChange={handleChange}
+                        className='login_reg_form_inputField'
+                        value={user.confirmPassword}
+                        type='password'
+                        name='confirmPassword'
+                      />
+                      <i
+                        ref={iconConfirmRef}
+                        className='far fa-eye'
+                        id='togglePassword'
+                        onClick={handleToggleConfirmPassword}
+                        style={{
+                          position: 'absolute',
+                          top: '6px',
+                          right: '5px',
+                          cursor: 'pointer',
+                        }}
+                      ></i>
+                    </div>
                   </label>
                   {isRegister ? (
                     <div
-                      className="login_reg_button_container"
-                      htmlFor="submit"
+                      className='login_reg_button_container'
+                      htmlFor='submit'
                     >
                       <button
-                        className="login_reg_button_wrapper"
-                        type="submit"
+                        className='login_reg_button_wrapper'
+                        type='submit'
                         value={'REGISTER'}
                       >
-                        <div className="button_login_register">
+                        <div className='button_login_register'>
                           <i
-                            class="fas fa-spinner fa-spin"
+                            class='fas fa-spinner fa-spin'
                             style={{ marginRight: '5px', marginBottom: '3px' }}
                           ></i>
                           REGISTER
@@ -230,31 +238,31 @@ function Register() {
                     </div>
                   ) : (
                     <div
-                      className="login_reg_button_container"
-                      htmlFor="submit"
+                      className='login_reg_button_container'
+                      htmlFor='submit'
                     >
                       <button
-                        className="login_reg_button_wrapper"
-                        type="submit"
+                        className='login_reg_button_wrapper'
+                        type='submit'
                         value={'REGISTER'}
                       >
-                        <div className="button_login_register">REGISTER</div>
+                        <div className='button_login_register'>REGISTER</div>
                       </button>
                     </div>
                   )}
                 </form>
-                <div className="reg_end_container">
-                  <div className="reg_otherAccounts_container">
-                    <Link className="login_with_facebook_button">
-                      <FaFacebook className="login_with_facebook_button_icon" />
+                {/* <div className='reg_end_container'>
+                  <div className='reg_otherAccounts_container'>
+                    <Link className='login_with_facebook_button'>
+                      <FaFacebook className='login_with_facebook_button_icon' />
                       Login with Facebook
                     </Link>
-                    <Link className="login_with_google_button">
-                      <FcGoogle className="login_with_google_button_icon" />
+                    <Link className='login_with_google_button'>
+                      <FcGoogle className='login_with_google_button_icon' />
                       SIGN IN WITH GOOGLE
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </>
             </section>
           </article>

@@ -72,8 +72,8 @@ function PaymentDialog() {
           zipCode: '',
           city: '',
           state: '',
-          firstName: '',
-          lastName: '',
+          fName: '',
+          lName: '',
           title: '',
         });
       })
@@ -262,48 +262,47 @@ function PaymentDialog() {
   return (
     <>
       {isCompleted ? (
-        <main className="payment_main_page">
-          <article className="payment_container">
-            <h1 className="payment_heading">PAYMENT</h1>
-            <section className="payment_section_container">
+        <main className='payment_main_page'>
+          <article className='payment_container'>
+            <h1 className='payment_heading'>PAYMENT</h1>
+            <section className='payment_section_container'>
               {/* Billing Address */}
-              <h2 className="payment_subHeading">BILLING ADDRESS</h2>
+              <h2 className='payment_subHeading'>BILLING ADDRESS</h2>
 
-              <div className="payment_form">
-                <ul className="payment_current_billing_address_list">
-                  <li className="payment_current_billing_address_list_item">
+              <div className='payment_form'>
+                <ul className='payment_current_billing_address_list'>
+                  <li className='payment_current_billing_address_list_item'>
                     <span>Title:</span> <span>{userInfoState.title}</span>
                   </li>
-                  <li className="payment_current_billing_address_list_item">
+                  <li className='payment_current_billing_address_list_item'>
                     <span>Name:</span>{' '}
                     <span>
                       {userInfoState.fName + ' ' + userInfoState.lName}
                     </span>
                   </li>
-                  <li className="payment_current_billing_address_list_item">
+                  <li className='payment_current_billing_address_list_item'>
                     <span>Address:</span> <span>{userInfoState.address}</span>
                   </li>
-                  <li className="payment_current_billing_address_list_item">
-                    <span>ZipCode:</span>{' '}
-                    <span>{userInfoState.zispanCode}</span>
+                  <li className='payment_current_billing_address_list_item'>
+                    <span>ZipCode:</span> <span>{userInfoState.zipCode}</span>
                   </li>
-                  <li className="payment_current_billing_address_list_item">
+                  <li className='payment_current_billing_address_list_item'>
                     <span>City:</span> <span>{userInfoState.city}</span>
                   </li>
-                  <li className="payment_current_billing_address_list_item">
+                  <li className='payment_current_billing_address_list_item'>
                     <span>State:</span> <span>{userInfoState.state}</span>
                   </li>
-                  <li className="payment_current_billing_address_list_item">
+                  <li className='payment_current_billing_address_list_item'>
                     <span>Country:</span> <span>{userInfoState.country}</span>
                   </li>
                 </ul>
-                <label className="payment_address_button_container" htmlFor="">
+                <label className='payment_address_button_container' htmlFor=''>
                   <button
-                    type="button"
-                    className="button_link"
+                    type='button'
+                    className='button_link'
                     onClick={openBillingForm}
                   >
-                    <div className="payment_address_button_small">
+                    <div className='payment_address_button_small'>
                       ADD BILLING ADDRESS
                     </div>
                   </button>
@@ -312,76 +311,82 @@ function PaymentDialog() {
                 <form
                   onSubmit={handleSubmitChangeAddress}
                   style={{ display: 'none' }}
-                  className="payment_address_form"
+                  className='payment_address_form'
                   ref={billingAddressForm}
-                  action=""
+                  action=''
                 >
-                  <div className="payment_address_form_grid">
-                    <input
-                      type="text"
-                      placeholder="TITLE"
+                  <div className='payment_address_form_grid'>
+                    <select
+                      type='text'
+                      placeholder='TITLE'
                       value={user.title}
-                      name="title"
+                      name='title'
                       onChange={handleChange}
-                    ></input>
+                    >
+                      <option default>SELECT TITLE</option>
+                      <option value='Mrs.'>Mrs.</option>
+                      <option value='Mr.'>Mr.</option>
+                      <option value='Ms.'>Ms.</option>
+                      <option value='Miss'>Miss</option>
+                    </select>
                     <input
-                      type="text"
-                      placeholder="FIRST NAME"
+                      type='text'
+                      placeholder='FIRST NAME'
                       value={user.fName}
-                      name="fName"
+                      name='fName'
                       onChange={handleChange}
                     ></input>
 
                     <input
-                      type="text"
-                      placeholder="LAST NAME"
+                      type='text'
+                      placeholder='LAST NAME'
                       value={user.lName}
-                      name="lName"
+                      name='lName'
                       onChange={handleChange}
                     ></input>
                     <input
-                      type="text"
-                      placeholder="ADDRESS"
+                      type='text'
+                      placeholder='ADDRESS'
                       value={user.address}
-                      name="address"
+                      name='address'
                       onChange={handleChange}
                     ></input>
                     <input
-                      type="text"
-                      placeholder="ZIPCODE"
+                      type='text'
+                      placeholder='ZIPCODE'
                       value={user.zipCode}
-                      name="zipCode"
+                      name='zipCode'
                       onChange={handleChange}
                     ></input>
                     <input
-                      type="text"
-                      placeholder="CITY"
+                      type='text'
+                      placeholder='CITY'
                       value={user.city}
-                      name="city"
+                      name='city'
                       onChange={handleChange}
                     ></input>
                     <input
-                      type="text"
-                      placeholder="STATE"
+                      type='text'
+                      placeholder='STATE'
                       value={user.state}
-                      name="state"
+                      name='state'
                       onChange={handleChange}
                     ></input>
                     <input
-                      type="text"
-                      placeholder="COUNTRY"
+                      type='text'
+                      placeholder='COUNTRY'
                       value={user.country}
-                      name="country"
+                      name='country'
                       onChange={handleChange}
                     ></input>
                   </div>
 
                   <label
-                    className="payment_address_button_container"
-                    htmlFor=""
+                    className='payment_address_button_container'
+                    htmlFor=''
                   >
-                    <button type="submit" className="button_link">
-                      <div className="payment_address_button_small">
+                    <button type='submit' className='button_link'>
+                      <div className='payment_address_button_small'>
                         CHANGE BILLING ADDRESS
                       </div>
                     </button>
@@ -390,112 +395,122 @@ function PaymentDialog() {
 
                 {/** Delivery Address */}
 
-                <section className="payment_section_container">
-                  <h2 className="payment_subHeading">DELIVERY ADDRESS</h2>
+                <section className='payment_section_container'>
+                  <h2 className='payment_subHeading'>DELIVERY ADDRESS</h2>
 
-                  <form className="payment_address_form" action="">
+                  <form className='payment_address_form' action=''>
                     <fieldset
-                      className="payment_address_form_grid"
+                      className='payment_address_form_grid'
                       ref={deliveryForm}
                     >
-                      <input
-                        className="payment_form_Title"
-                        type="text"
-                        placeholder={
-                          isDeliveryChecked ? 'TITLE' : `${userInfoState.title}`
-                        }
-                        name="deliveryTitle"
+                      {' '}
+                      <select
+                        type='text'
+                        placeholder='TITLE'
                         value={userDeliveryAddress.deliveryTitle}
+                        name='deliveryTitle'
                         onChange={deliveryFormHandleChange}
-                      ></input>
+                      >
+                        {isDeliveryChecked ? (
+                          <>
+                            <option default>SELECT TITLE</option>
+                            <option value='Mrs.'>Mrs.</option>
+                            <option value='Mr.'>Mr.</option>
+                            <option value='Ms.'>Ms.</option>
+                            <option value='Miss'>Miss</option>
+                          </>
+                        ) : (
+                          <option value={`${userInfoState.title}`}> {`${userInfoState.title}`}</option>
+                        )}
+                      </select>
                       <input
-                        className="payment_form_Name"
-                        type="text"
+                        className='payment_form_Name'
+                        type='text'
                         placeholder={
                           isDeliveryChecked
                             ? 'FIRST NAME'
                             : `${userInfoState.fName}`
                         }
-                        name="deliveryFName"
+                        name='deliveryFName'
                         value={userDeliveryAddress.deliveryFName}
                         onChange={deliveryFormHandleChange}
                       ></input>
                       <input
-                        className="payment_form_Name"
-                        type="text"
+                        className='payment_form_Name'
+                        type='text'
                         placeholder={
                           isDeliveryChecked
                             ? 'LAST NAME'
                             : `${userInfoState.lName}`
                         }
-                        name="deliveryLName"
+                        name='deliveryLName'
                         value={userDeliveryAddress.deliveryLName}
                         onChange={deliveryFormHandleChange}
                       ></input>
                       <input
-                        className="payment_form_Street"
-                        type="text"
+                        className='payment_form_Street'
+                        type='text'
                         placeholder={
                           isDeliveryChecked
                             ? 'ADDRESS'
                             : `${userInfoState.address}`
                         }
-                        name="deliveryAddress"
+                        name='deliveryAddress'
                         value={userDeliveryAddress.deliveryAddress}
                         onChange={deliveryFormHandleChange}
                       ></input>
                       <input
-                        className="payment_form_PostCode"
-                        type="text"
+                        className='payment_form_PostCode'
+                        type='text'
                         placeholder={
                           isDeliveryChecked
                             ? 'ZIP-CODE'
                             : `${userInfoState.zipCode}`
                         }
-                        name="deliveryZipCode"
+                        name='deliveryZipCode'
                         value={userDeliveryAddress.deliveryZipCode}
                         onChange={deliveryFormHandleChange}
                       ></input>
                       <input
-                        className="payment_form_City"
-                        type="text"
+                        className='payment_form_City'
+                        type='text'
                         placeholder={
                           isDeliveryChecked ? 'CITY' : `${userInfoState.city}`
                         }
-                        name="deliveryCity"
+                        name='deliveryCity'
                         value={userDeliveryAddress.deliveryCity}
                         onChange={deliveryFormHandleChange}
                       ></input>
                       <input
-                        className="payment_form_State"
-                        type="text"
+                        className='payment_form_State'
+                        type='text'
                         placeholder={
                           isDeliveryChecked ? 'STATE' : `${userInfoState.state}`
                         }
-                        name="deliveryState"
+                        name='deliveryState'
                         value={userDeliveryAddress.deliveryState}
                         onChange={deliveryFormHandleChange}
                       ></input>
                       <input
-                        className="payment_form_Country"
-                        type="text"
+                        className='payment_form_Country'
+                        type='text'
                         placeholder={
                           isDeliveryChecked
                             ? 'COUNTRY'
                             : `${userInfoState.country}`
                         }
-                        name="deliveryCountry"
+                        name='deliveryCountry'
                         value={userDeliveryAddress.deliveryCountry}
                         onChange={deliveryFormHandleChange}
                       ></input>
                     </fieldset>
-                    <div className="payment_selection_container">
+                    <div className='payment_selection_container'>
                       <input
                         onClick={onCheck}
-                        className="payment_selection_checkbox"
-                        type="checkBox"
+                        className='payment_selection_checkbox'
+                        type='checkBox'
                       ></input>
-                      <div className="payment_selection_text">
+                      <div className='payment_selection_text'>
                         <p>SAME AS BILLING ADDRESS</p>
                       </div>
                     </div>
@@ -503,144 +518,144 @@ function PaymentDialog() {
                 </section>
 
                 {/** Shipping Method */}
-                <section className="payment_section_container">
-                  <h2 className="payment_subHeading">SHIPPING METHOD</h2>
-                  <div className="payment_selection_container">
+                <section className='payment_section_container'>
+                  <h2 className='payment_subHeading'>SHIPPING METHOD</h2>
+                  <div className='payment_selection_container'>
                     <input
                       onClick={shippingMethodHandleChange}
                       value={'standard'}
-                      className="payment_selection_checkbox"
-                      type="radio"
-                      name="shippingMethod"
+                      className='payment_selection_checkbox'
+                      type='radio'
+                      name='shippingMethod'
                     ></input>
                     <p>DHL 3 - 5 WORKING DAYS</p>
                   </div>
-                  <div className="payment_selection_container">
+                  <div className='payment_selection_container'>
                     <input
                       onClick={shippingMethodHandleChange}
                       value={'express'}
-                      className="payment_selection_checkbox"
-                      type="radio"
-                      name="shippingMethod"
+                      className='payment_selection_checkbox'
+                      type='radio'
+                      name='shippingMethod'
                     ></input>
 
                     <div>
                       <p>DHL NEXT DAY DELIVERY</p>
-                      <p className="sub_text">
+                      <p className='sub_text'>
                         AVAILABLE ON ORDERS PLACED BEFORE 1100
                       </p>
                     </div>
                   </div>
                 </section>
                 {/**Payment Method */}
-                <section className="payment_section_container">
-                  <h2 className="payment_subHeading">PAYMENT METHOD</h2>
+                <section className='payment_section_container'>
+                  <h2 className='payment_subHeading'>PAYMENT METHOD</h2>
 
                   {/**Credit Cards */}
-                  <div className="payment_method_contents">
+                  <div className='payment_method_contents'>
                     <input
                       onClick={paymentMethodHandleChange}
                       value={'credit card'}
-                      name="paymentCard"
-                      className="payment_selection_checkbox"
-                      type="radio"
+                      name='paymentCard'
+                      className='payment_selection_checkbox'
+                      type='radio'
                     ></input>
                     <p>CREDIT CARD</p>
 
-                    <div className="bank_card_images">
-                      <FaCcMastercard className="payment_card" />
-                      <FaCcVisa className="payment_card" />
-                      <FaCcAmex className="payment_card" />
+                    <div className='bank_card_images'>
+                      <FaCcMastercard className='payment_card' />
+                      <FaCcVisa className='payment_card' />
+                      <FaCcAmex className='payment_card' />
                     </div>
                   </div>
                   {/** Giro Card */}
-                  <div className="payment_method_contents">
+                  <div className='payment_method_contents'>
                     <input
                       onClick={paymentMethodHandleChange}
                       value={'giro card'}
-                      name="paymentCard"
-                      className="payment_selection_checkbox"
-                      type="radio"
+                      name='paymentCard'
+                      className='payment_selection_checkbox'
+                      type='radio'
                     ></input>
                     <p>GIRO CARD</p>
                   </div>
                   {/** PayPal */}
-                  <div className="payment_method_contents">
+                  <div className='payment_method_contents'>
                     <input
                       onClick={paymentMethodHandleChange}
                       value={'paypal'}
-                      name="paymentCard"
-                      className="payment_selection_checkbox"
-                      type="radio"
+                      name='paymentCard'
+                      className='payment_selection_checkbox'
+                      type='radio'
                     ></input>
                     <p>PAYPAL</p>
 
-                    <div className="bank_card_images">
-                      <FaCcPaypal className="payment_card" />
+                    <div className='bank_card_images'>
+                      <FaCcPaypal className='payment_card' />
                     </div>
                   </div>
                 </section>
                 {/**Payment Details */}
-                <section className="payment_section_container">
-                  <h2 className="payment_subHeading">PAYMENT DETAILS</h2>
-                  <div className="payment_details_form">
+                <section className='payment_section_container'>
+                  <h2 className='payment_subHeading'>PAYMENT DETAILS</h2>
+                  <div className='payment_details_form'>
                     <label>
                       <input
                         onChange={paymentDetailsHandleChange}
                         value={paymentDetails.cardholderName}
-                        name="cardholderName"
-                        type="text"
-                        placeholder="CARDHOLDER NAME"
+                        name='cardholderName'
+                        type='text'
+                        placeholder='CARDHOLDER NAME'
                       ></input>
                     </label>
                     <label>
                       <input
                         onChange={paymentDetailsHandleChange}
                         value={paymentDetails.cardNumber}
-                        name="cardNumber"
-                        type="number"
-                        placeholder="CARD NUMBER"
+                        name='cardNumber'
+                        type='number'
+                        placeholder='CARD NUMBER'
                       ></input>
                     </label>
                     <label>
                       <input
                         onChange={paymentDetailsHandleChange}
                         value={paymentDetails.expiryDate}
-                        name="expiryDate"
-                        type="date"
-                        placeholder="EXPIRY DATE"
+                        name='expiryDate'
+                        type='date'
+                        placeholder='EXPIRY DATE'
                       ></input>
                     </label>
                     <label>
                       <input
                         onChange={paymentDetailsHandleChange}
                         value={paymentDetails.CSV}
-                        name="CSV"
-                        type="text"
-                        placeholder="CSV"
+                        name='CSV'
+                        type='text'
+                        placeholder='CSV'
                       ></input>
                     </label>
                   </div>
-                  <section className="payment_calculation_container">
-                    <div className="payment_cost_labels_container">
-                      <p className="payment_cost_label">SHIPPING:</p>
-                      <p className="payment_cost_label">TOTAL:</p>
+                  <section className='payment_calculation_container'>
+                    <div className='payment_cost_labels_container'>
+                      <p className='payment_cost_label'>SHIPPING:</p>
+                      <p className='payment_cost_label'>TOTAL:</p>
                     </div>
-                    <section className="payment_cost_amounts_container">
-                      <p className="payment_cost_amount">{shipping} €</p>
-                      <p className="payment_cost_amount">
+                    <section className='payment_cost_amounts_container'>
+                      <p className='payment_cost_amount'>{shipping} €</p>
+                      <p className='payment_cost_amount'>
                         {cartProductState.length > 0 && total} €
                       </p>
                     </section>
                   </section>
 
-                  <div className="payment_button_container">
+                  <div className='payment_button_container'>
                     <button
-                      className="button_link"
+                      className='button_link'
                       onClick={handlePayment}
-                      type="button"
+                      type='button'
                     >
-                      <div className="button_large_colorOne">PAY NOW</div>
+                      <div className='button_large_colorOne'>PAY NOW</div>
                     </button>
                   </div>
                 </section>
@@ -649,13 +664,13 @@ function PaymentDialog() {
           </article>
         </main>
       ) : (
-        <main className="payment_main_page">
-          <div style={{ height: '100vh' }} className="payment_container">
-            <div className="minor_dialog_container">
-              <h2 className="minor_dialog_subHeading">
+        <main className='payment_main_page'>
+          <div style={{ height: '100vh' }} className='payment_container'>
+            <div className='minor_dialog_container'>
+              <h2 className='minor_dialog_subHeading'>
                 THANKS FOR YOUR ORDER!
               </h2>
-              <h3 className="minor_dialog_text">
+              <h3 className='minor_dialog_text'>
                 Your items will be on the way as soon as possible...
               </h3>
             </div>
