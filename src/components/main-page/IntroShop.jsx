@@ -11,8 +11,8 @@ function IntroShop() {
           <div className="intro_img_container">
             <img
               className="intro_img_landscape"
-              src="https://images.squarespace-cdn.com/content/v1/5e935794663e0a3ac22fcc6a/1608160457149-UOF08FAX8C60W2UTOZYX/1187EB67-BD66-4E00-A188-8976CA267AD2_1_201_a.jpeg?format=2500w"
-              alt=""
+              src="https://ucarecdn.com/c9f02f9c-c7e6-4a04-86d4-b2dad102692b/-/preview/jzzGlIPh"
+              alt="showing shop section"
             />
           </div>
 
@@ -30,8 +30,8 @@ function IntroShop() {
           <div className="intro_img_container">
             <img
               className="intro_img_landscape"
-              src="https://images.squarespace-cdn.com/content/v1/5e935794663e0a3ac22fcc6a/1608160457149-UOF08FAX8C60W2UTOZYX/1187EB67-BD66-4E00-A188-8976CA267AD2_1_201_a.jpeg?format=2500w"
-              alt=""
+              src="https://www.coffeedesk.com/blog/wp-content/uploads/2019/07/JJF_3805-1920x1280.jpg"
+              alt="showing shop section"
             />
           </div>
           <Link
@@ -48,8 +48,8 @@ function IntroShop() {
           <div className="intro_img_container">
             <img
               className="intro_img_landscape"
-              src="https://images.squarespace-cdn.com/content/v1/5e935794663e0a3ac22fcc6a/1608160457149-UOF08FAX8C60W2UTOZYX/1187EB67-BD66-4E00-A188-8976CA267AD2_1_201_a.jpeg?format=2500w"
-              alt=""
+              src="https://cdn.shopify.com/s/files/1/0504/8654/2523/products/custom_resized_5e291184-b9e8-4d01-a70f-980f29062188_1400x.jpg?v=1660210235"
+              alt="showing shop section"
             />
           </div>
 
