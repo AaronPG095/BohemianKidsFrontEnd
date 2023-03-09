@@ -169,7 +169,7 @@ function ProductCheckBox({ productID, currentProductType, setIsOpen }) {
                   name='checkboxSize'
                   defaultChecked
                   value={1}
-                  onClick={handleChange}
+                  onChange={handleChange}
                 />
               </div>
               <div className='product_selection_item'>
@@ -183,7 +183,7 @@ function ProductCheckBox({ productID, currentProductType, setIsOpen }) {
                   type='radio'
                   name='checkboxSize'
                   value={1.8}
-                  onClick={handleChange}
+                  onChange={handleChange}
                 />
               </div>
             </form>
