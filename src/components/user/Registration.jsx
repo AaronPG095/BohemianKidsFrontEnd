@@ -243,18 +243,6 @@ function Register() {
                     </div>
                   )}
                 </form>
-                <div className="reg_end_container">
-                  <div className="reg_otherAccounts_container">
-                    <Link className="login_with_facebook_button">
-                      <FaFacebook className="login_with_facebook_button_icon" />
-                      Login with Facebook
-                    </Link>
-                    <Link className="login_with_google_button">
-                      <FcGoogle className="login_with_google_button_icon" />
-                      SIGN IN WITH GOOGLE
-                    </Link>
-                  </div>
-                </div>
               </>
             </section>
           </article>

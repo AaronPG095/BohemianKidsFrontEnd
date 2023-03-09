@@ -81,6 +81,10 @@
           width: 100%;
           margin: 0rem 0rem 2rem 0rem;
 
+          label {
+            margin-top: 0.3rem;
+          }
+
           fieldset:disabled {
             color: red;
             input {
@@ -89,7 +93,15 @@
           }
 
           input[type='text'],
-          input[type='number'] {
+          input[type='number'],
+          input[type='password'],
+          input[type='title'] {
+            background: transparent;
+            height: 1.8rem;
+            margin: 0.3rem;
+            border: black solid 0.15rem;
+          }
+          select[type='text'] {
             background: transparent;
             height: 1.8rem;
             margin: 0.3rem;
