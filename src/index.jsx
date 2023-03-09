@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import ErrorBoundary from './components/error-boundary/ErrorBoundary';
 import { AuthProvider } from './components/auth-context/authContext';
 import App from './App';
@@ -13,7 +13,7 @@ import NewsContext from './components/context/NewsContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <ErrorBoundary>
       <CartProductContext>
         <AuthProvider>
@@ -27,5 +27,5 @@ root.render(
         </AuthProvider>
       </CartProductContext>
     </ErrorBoundary>
-  </BrowserRouter>
+  </HashRouter>
 );
