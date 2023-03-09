@@ -38,34 +38,34 @@ function IntroNews() {
   }, []);
 
   return (
-    <div className="news_background_container">
-      <article className="news_content_container">
-        <h1 className="intro_heading">NEWS</h1>
-        {isLoading ? (
-          <p>Loading...</p>
-        ) : (
-          <>
-            <PostComponent
-              _id={newsState[newsState.length - 1]._id}
-              title={newsState[newsState.length - 1].title}
-              description={newsState[newsState.length - 1].description}
-              img={newsState[newsState.length - 1].img}
-              date={newsState[newsState.length - 1].date}
-            />
-          </>
-        )}
-        <section className="intro_button_container">
-          <Link
-            onClick={goToTopOfPage}
-            aria-label="News button / link"
-            className="button_link"
-            to="/News"
-          >
-            <div className="button_large_colorThree"> NEWS</div>
-          </Link>
-        </section>
-      </article>
-    </div>
+    <article className="intro_article_container">
+      <h1 className="intro_heading">NEWS</h1>
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : (
+        <>
+        <div>
+          <PostComponent
+            _id={newsState[newsState.length - 1]._id}
+            title={newsState[newsState.length - 1].title}
+            description={newsState[newsState.length - 1].description}
+            img={newsState[newsState.length - 1].img}
+            date={newsState[newsState.length - 1].date}
+          />
+          </div>
+        </>
+      )}
+      <section className="intro_button_container">
+        <Link
+          onClick={goToTopOfPage}
+          aria-label="News button / link"
+          className="button_link"
+          to="/News"
+        >
+          <div className="button_large_colorThree"> NEWS</div>
+        </Link>
+      </section>
+    </article>
   );
 }
 

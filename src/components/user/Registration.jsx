@@ -263,6 +263,7 @@ function Register() {
                     </Link>
                   </div>
                 </div> */}
+
               </>
             </section>
           </article>

@@ -296,7 +296,8 @@ function PaymentDialog() {
                     <span>Country:</span> <span>{userInfoState.country}</span>
                   </li>
                 </ul>
-                <label className='payment_address_button_container' htmlFor=''>
+
+                <div className="payment_address_button_container" htmlFor="">
                   <button
                     type='button'
                     className='button_link'
@@ -306,7 +307,7 @@ function PaymentDialog() {
                       ADD BILLING ADDRESS
                     </div>
                   </button>
-                </label>
+                </div>
 
                 <form
                   onSubmit={handleSubmitChangeAddress}
