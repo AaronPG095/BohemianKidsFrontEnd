@@ -93,63 +93,60 @@ function Login() {
   }
 
   return (
-    <main className="login_reg_page">
-      <article className="login_reg_outer_container">
-        <section className="login_reg_inner_container">
-          <h1 className="login_reg_heading">LOGIN</h1>
+    <main className='login_reg_page'>
+      <article className='login_reg_outer_container'>
+        <section className='login_reg_inner_container'>
+          <h1 className='login_reg_heading'>LOGIN</h1>
           {loginMessage && (
-            <span className="login_error-message">{loginMessage}</span>
+            <span className='login_error-message'>{loginMessage}</span>
           )}
-          <form onSubmit={handleSubmit} className="login_reg_form" action="">
-            <label className="login_reg_form_item" htmlFor="">
+          <form onSubmit={handleSubmit} className='login_reg_form' action=''>
+            <label className='login_reg_form_item' htmlFor=''>
               EMAIL
               <input
                 value={user.email}
                 onChange={handleChange}
-                className="login_reg_form_inputField"
-                type="email"
-                name="email"
+                className='login_reg_form_inputField'
+                type='email'
+                name='email'
               />
             </label>
-            <label
-              className="login_reg_form_item"
-              htmlFor=""
-              style={{ position: 'relative', zIndex: '0' }}
-            >
+            <label className='login_reg_form_item' htmlFor=''>
               PASSWORD
-              <input
-                value={user.password}
-                onChange={handleChange}
-                className="login_reg_form_inputField"
-                type="password"
-                name="password"
-                id="password"
-                ref={inputPassword}
-              />
-              <i
-                ref={iconRef}
-                className="far fa-eye"
-                id="togglePassword"
-                onClick={handleTogglePassword}
-                style={{
-                  position: 'absolute',
-                  textAlign: 'right',
-                  top: '30px',
-                  right: '10px',
-                  cursor: 'pointer',
-                }}
-              ></i>
+              <div style={{ position: 'relative', zIndex: '0' }}>
+                <input
+                  value={user.password}
+                  onChange={handleChange}
+                  className='login_reg_form_inputField'
+                  type='password'
+                  name='password'
+                  id='password'
+                  ref={inputPassword}
+                />
+                <i
+                  ref={iconRef}
+                  className='far fa-eye'
+                  id='togglePassword'
+                  onClick={handleTogglePassword}
+                  style={{
+                    position: 'absolute',
+                    top: '6px',
+                    right: '5px',
+                    cursor: 'pointer',
+                  }}
+                ></i>
+              </div>
             </label>
             {isLogin ? (
-              <div className="login_reg_button_container" htmlFor="submit">
+              <div className='login_reg_button_container' htmlFor='submit'>
                 <button
-                  className="login_reg_button_wrapper"
-                  type="submit"
+                  className='login_reg_button_wrapper'
+                  type='submit'
                   value={'LOGIN'}
                 >
-                  <div className="button_login_register">
+                  <div className='button_login_register'>
                     <i
-                      className="fas fa-spinner fa-spin"
+                      className='fas fa-spinner fa-spin'
                       style={{ marginRight: '5px', marginBottom: '3px' }}
                     ></i>
                     LOGIN
@@ -157,15 +154,15 @@ function Login() {
                 </button>
               </div>
             ) : (
-              <div className="login_reg_button_container" htmlFor="submit">
+              <div className='login_reg_button_container' htmlFor='submit'>
                 <button
-                  className="login_reg_button_wrapper"
-                  type="submit"
+                  className='login_reg_button_wrapper'
+                  type='submit'
                   value={'LOGIN'}
                 >
                   <div
-                    className="button_login_register"
-                    type="submit"
+                    className='button_login_register'
+                    type='submit'
                     value={'LOGIN'}
                   >
                     LOGIN
@@ -174,19 +171,19 @@ function Login() {
               </div>
             )}
           </form>
-          <div className="login_end_container">
+          <div className='login_end_container'>
             <Link
-              to="/forgot-password"
-              className="notRegistered_link"
-              aria-label="register button / link"
+              to='/forgot-password'
+              className='notRegistered_link'
+              aria-label='register button / link'
             >
               FORGOT PASSWORD?
             </Link>
 
             <Link
               to={'/Registration'}
-              className="notRegistered_link"
-              aria-label="register button / link"
+              className='notRegistered_link'
+              aria-label='register button / link'
             >
               NOT REGISTERED?
             </Link>
