@@ -9,14 +9,18 @@
   height: 20rem;
   border: 7px solid black;
   @include image-portrait-boxShadow-smallScreen;
+  object-fit: cover;
+  background-position: center;
 }
 
 @mixin image-small-landscape {
   margin: 0rem 0rem 2rem 0rem;
-  width: 16rem;
-  height: 9rem;
+  width: 20rem;
+  height: 11.25rem;
   border: 5px solid black;
   @include image-landscape-boxShadow;
+  object-fit: cover;
+  background-position: center;
 }
 
 @mixin image-large-landscape {
