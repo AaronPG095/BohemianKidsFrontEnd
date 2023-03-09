@@ -103,9 +103,13 @@
     }
     .intro_news_text_container {
       .intro_text {
-        @include text-font-small;
+        @include text-font-medium;
         padding: 0.4rem 1rem;
       }
+    }
+    .intro_news_button_container {
+      @include flex-center-end;
+      width: 100%;
     }
 
     //? Shop Section

@@ -131,7 +131,7 @@ export function NavBar({ setOpen, open }) {
           ) : (
             //*  Logged Out User *//
             <div className="user_dropdown">
-              <button className="button_link" onClick={handleOpen}>
+              <div className="button_link" onClick={handleOpen}>
                 <div className="navbar_button_user_loggedOut">
                   <span>USER</span>
                   {open ? (
@@ -140,7 +140,7 @@ export function NavBar({ setOpen, open }) {
                     <MdOutlineArrowDropDown className="user_dropdown_arrow_icon" />
                   )}
                 </div>
-              </button>
+              </div>
               {open ? (
                 <div className="user_dropdown_content">
                   <NavLink
@@ -167,7 +167,14 @@ export function NavBar({ setOpen, open }) {
 
           {/* Shopping Cart Button */}
 
-          {path === '/ShoppingCart' || path === '/PaymentDialog' ? null : (
+          {path === '/ShoppingCart' ||
+          path === '/PaymentDialog' ||
+          path === '/AdminPage' ||
+          path === '/AdminPage' ||
+          path === '/user' ||
+          path === '/addPost' ||
+          path === '/addCoffee' ||
+          path === '/addMerch' ? null : (
             <NavLink
               className="navbar_shopping_cart_navlink"
               onClick={goToTopOfPage}

@@ -11,6 +11,33 @@
   // .fixed {
   //   position: fixed;
   // }
+
+  @media (min-width: #{$screen-sm-min}) {
+    .navbar_content {
+      padding: 0rem 6rem;
+    }
+  }
+  @media (min-width: #{$screen-md-min}) {
+    .navbar_content {
+      padding: 0rem 6rem;
+    }
+  }
+  @media (min-width: #{$screen-lg-min}) {
+    .navbar_content {
+      padding: 0rem 9rem;
+    }
+  }
+  @media (min-width: #{$screen-xl-min}) {
+    .navbar_content {
+      padding: 0rem 12rem;
+    }
+  }
+  @media (min-width: #{$screen-xxl-min}) {
+    .navbar_content {
+      padding: 0rem 20rem;
+    }
+  }
+
   @include sm {
     padding: 0 0rem;
   }
@@ -23,7 +50,6 @@
   @include xl {
     padding: 0 12rem;
   }
-
 
   .navbar_content {
     .navbar_content_container {
@@ -45,7 +71,6 @@
           list-style-type: none;
           @include flex-center-center;
           flex-direction: column;
-          
 
           .user_dropdown_list_loggedIn {
             cursor: pointer;
@@ -102,3 +127,5 @@
     }
   }
 }
+
+//

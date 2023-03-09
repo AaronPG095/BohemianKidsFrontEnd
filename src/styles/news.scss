@@ -7,59 +7,58 @@
   @include flex-center-center;
   flex-direction: column;
   background: linear-gradient(180deg, #fec135 18.49%, #5effe5 36.81%);
+}
+.news_content_container {
+  margin-top: 2rem;
+  padding: 2rem 0rem;
+  width: auto;
+  max-width: 32rem;
+}
 
-  .news_content_container {
-    margin-top: 2rem;
-    padding: 2rem 0rem;
-    width: auto;
-    max-width: 32rem;
+.news_heading {
+  text-align: center;
+  @include heading-font;
+}
+.news_post_container {
+  margin: 1rem 1rem 5rem 1rem;
 
-    .news_heading {
-      text-align: center;
-      @include heading-font;
+  .news_post_title_container {
+    margin: 1rem 1rem 1rem 1rem;
+    .news_post_title {
+      @include text-font-large;
+      width: 60%;
     }
-    .news_post_container {
-      margin: 1rem 1rem 5rem 1rem;
-
-      .news_post_title_container {
-        margin: 1rem 1rem 1rem 1rem;
-        .news_post_title {
-          @include text-font-large;
-          width: 60%;
-        }
-        .news_post_title_label {
-        }
-      }
-
-      .news_text_container {
-        margin: 0rem 1rem;
-
-        .news_medium_text {
-          @include text-font-medium;
-          padding: 0.4rem 0rem;
-          white-space: pre-line;
-        }
-      }
-
-      .news_img_container {
-        @include flex-center-center;
-        width: 100%;
-        height: auto;
-        margin: 1rem 0rem;
-        .news_img {
-          @include image_small-landscape;
-        }
-      }
-    }
-
-    .news_post_button_container {
-      padding: 0rem 1rem;
-      @include flex-center-end;
+    .news_post_title_label {
     }
   }
-  .news_home_button_container {
-    margin: 4rem 2rem 2rem 2rem;
+
+  .news_text_container {
+    margin: 0rem 1rem;
+
+    .news_medium_text {
+      @include text-font-medium;
+      padding: 0.4rem 0rem;
+      white-space: pre-line;
+    }
   }
+
+  .news_img_container {
+    @include flex-center-center;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0rem;
+    .news_img {
+      @include image_small-landscape;
+    }
+  }
+}
+
+.news_post_button_container {
+  padding: 0rem 1rem;
+  @include flex-center-end;
+}
+.news_home_button_container {
+  margin: 4rem 2rem 2rem 2rem;
 }
 
 .text-center {
